@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Quizap!</string>
+    <string name="textview">TextView</string>
+    <string name="todo">TODO</string>
+    <string name="title_activity_testing2">testing2</string>
+
+
+    <string name="title_activity_quiz_levels">QuizLevels</string>
+    <string name="literature">Literature</string>
+    <string name="world_history">World History</string>
+    <string name="math">Math</string>
+    <string name="geography">Geography</string>
+    <string name="bontany">Bontany</string>
+    <string name="zoology">Zoology</string>
+    <string name="programming">Programming</string>
+    <string name="grade_school">Grade School</string>
+    <string name="high_school">High School</string>
+    <string name="college">College</string>
+    <string name="title_activity_hamburger_activity">Hamburger_activity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+</resources>
