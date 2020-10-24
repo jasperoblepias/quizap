@@ -9,6 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".help_button"></activity>
+        <activity android:name=".activity_literature" />
+        <activity android:name=".activity_math" />
+        <activity android:name=".activity_worldhistory" />
+        <activity android:name=".activity_zoology" />
+        <activity android:name=".activity_programming" />
+        <activity android:name=".activity_geography" />
+        <activity android:name=".activity_botany" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
