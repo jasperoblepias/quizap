@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
                 View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
                         | View.SYSTEM_UI_FLAG_FULLSCREEN
                         | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
+
         caseButtons();
     }
 
@@ -28,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.botanyButton).setOnClickListener(buttonClickListener);
         findViewById(R.id.zoologyButton).setOnClickListener(buttonClickListener);
         findViewById(R.id.programmingButton).setOnClickListener(buttonClickListener);
+        findViewById(R.id.help_button).setOnClickListener(buttonClickListener);
     }
 
     private View.OnClickListener buttonClickListener = new View.OnClickListener() {
@@ -63,6 +65,7 @@ public class MainActivity extends AppCompatActivity {
                     Intent prog = new Intent(MainActivity.this, activity_programming.class);
                     startActivity(prog);
                     break;
+
             }
         }
     };
