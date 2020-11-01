@@ -39,4 +39,9 @@
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="btn">B</string>
+    <string name="close">Close</string>
+    <string name="help">HELP</string>
+    <string name="ok">OK</string>
+    <string name="pciture">Picture1</string>
+
 </resources>

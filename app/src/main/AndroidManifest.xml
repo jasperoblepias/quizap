@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".help_button"></activity>
+        <activity android:name=".help_button"
+            android:theme="@style/AppTheme.ThemeForHelpButton"></activity>
         <activity android:name=".activity_literature" />
         <activity android:name=".activity_math" />
         <activity android:name=".activity_worldhistory" />

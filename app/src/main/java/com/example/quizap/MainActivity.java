@@ -65,7 +65,9 @@ public class MainActivity extends AppCompatActivity {
                     Intent prog = new Intent(MainActivity.this, activity_programming.class);
                     startActivity(prog);
                     break;
-
+                case R.id.help_button:
+                    Intent help = new Intent(MainActivity.this, help_button.class);
+                    startActivity(help);
             }
         }
     };
