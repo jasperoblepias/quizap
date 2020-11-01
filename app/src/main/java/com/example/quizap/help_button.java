@@ -32,19 +32,13 @@ public class help_button extends Activity {
             }
         });
 
-        DisplayMetrics dm = new DisplayMetrics();
-        getWindowManager().getDefaultDisplay().getMetrics(dm);
+        DisplayMetrics dm_help = new DisplayMetrics();
+        getWindowManager().getDefaultDisplay().getMetrics(dm_help);
 
-        int width = dm.widthPixels;
-        int height = dm.heightPixels;
+        int width = dm_help.widthPixels;
+        int height = dm_help.heightPixels;
 
         getWindow().setLayout((int)(width*.8),(int)(height*.6));
-//
-//        WindowManager.LayoutParams params = getWindow().getAttributes();
-//        params.gravity = Gravity.CENTER;
-//        params.x = 0;
-//        params.y = -20;
-//
-//        getWindow().setAttributes(params);
+
     }
 }

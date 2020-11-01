@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.zoologyButton).setOnClickListener(buttonClickListener);
         findViewById(R.id.programmingButton).setOnClickListener(buttonClickListener);
         findViewById(R.id.help_button).setOnClickListener(buttonClickListener);
+        findViewById(R.id.hamburger).setOnClickListener(buttonClickListener);
     }
 
     private View.OnClickListener buttonClickListener = new View.OnClickListener() {
@@ -68,6 +69,11 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.help_button:
                     Intent help = new Intent(MainActivity.this, help_button.class);
                     startActivity(help);
+                    break;
+                case R.id.hamburger:
+                    Intent ham = new Intent(MainActivity.this, activity_hamburger.class);
+                    startActivity(ham);
+                    break;
             }
         }
     };
