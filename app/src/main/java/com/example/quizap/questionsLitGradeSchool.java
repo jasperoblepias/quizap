@@ -2,19 +2,43 @@ package com.example.quizap;
 
 public class questionsLitGradeSchool {
     public String mQuestions [] = {
-            "We turned up the heat since it was getting cold",
-            "Tommy and Matthew are good friends because they have many common interests and hobbies.",
-            "Anna practiced math during summer vacation, therefore, she finds math easy."
+            "We turned up the heat since it was getting cold",
+            "Tommy and Matthew are good friends because they have many common interests and hobbies",
+            "Anna practiced math during summer vacation, therefore, she finds math easy.",
+            "I fell off my bike and scraped my knee.",
+            "Our apartment is on the 11th floor , therefore, we have a great view of the city.",
+            "What is the effect? Terry trained well for the track meet; therefore,",
+            "Janice didn't eat her breakfast quickly, so she missed the school bus.",
+            "It was pouring rain, so the football game was canceled.",
+            "What is the cause?Jose drank two glasses of ice-cold water",
+            "What is the cause? Melissa was promoted to a better-paying position at work"
+
     };
 
     private String mChoices [][] = {
-            {"Cause","Effect","All of the above","None of the above"},
-            {"Cause","Effect","All of the above","None of the above"},
-            {"Cause","Effect","All of the above","None of the above"}
+            {"Cause","Effect","Not enough info","None of the above"},
+            {"Cause","Effect","Not enough info","None of the above"},
+            {"Cause","Effect","Not enough info","None of the above"},
+            {"Cause","Effect","Not enough info","None of the above"},
+            {"Cause","Effect","Not enough info","None of the above"},
+            {"He decided not to run in the race.","He became hungry, ate too much, and got sick","He won the 50-yard dash race","He had never trained so well before."},
+            {"Cause","Effect","Not enough info","None of the above"},
+            {"Cause","Effect","Not enough info","None of the above"},
+            {"Because he had nothing else to do.","Because he was extremely hot and thirsty","Because he was feeling cold.","Because he was going out with his friends."},
+            {"Because she was an excellent worker.","Because she was often late or absent.","Because she went on vacation to Europe.","Because she asked for help so often."},
     };
 
     private String mAnswers [] = {
-            "Effect","Effect","Effect"
+            "Effect",
+            "Effect",
+            "Effect",
+            "Cause",
+            "Effect",
+            "He won the 50-yard dash race",
+            "Effect",
+            "Cause",
+            "Because he was extremely hot and thirsty.",
+            "Because she was an excellent worker."
     };
 
     public String getQuestions(int a){

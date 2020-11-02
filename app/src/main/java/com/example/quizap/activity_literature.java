@@ -39,5 +39,4 @@ public class activity_literature extends AppCompatActivity {
             }
         }
     };
-
 }

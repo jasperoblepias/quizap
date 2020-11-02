@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/question3"
+        android:layout_width="371dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="196dp"
+        android:fontFamily="@font/san_serif"
+        android:text="@string/questionsText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonChoiceD"
+        android:layout_width="369dp"
+        android:layout_height="65dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="552dp"
+        android:background="@drawable/option_d"
+        android:fontFamily="@font/san_serif"
+        android:text="@string/buttonD"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonChoiceA"
+        android:layout_width="369dp"
+        android:layout_height="65dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="304dp"
+        android:background="@drawable/option_a"
+        android:fontFamily="@font/san_serif"
+        android:text="@string/buttonA"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonChoiceB"
+        android:layout_width="369dp"
+        android:layout_height="65dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="388dp"
+        android:background="@drawable/option_b"
+        android:fontFamily="@font/san_serif"
+        android:text="@string/buttonB"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonChoiceC"
+        android:layout_width="369dp"
+        android:layout_height="65dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="472dp"
+        android:background="@drawable/option_c"
+        android:fontFamily="@font/san_serif"
+        android:text="@string/buttonC"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="411dp"
+        android:layout_height="137dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/toporange" />
+
+    <TextView
+        android:id="@+id/score3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="4dp"
+        android:text="@string/todo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="44dp"
+        android:text="@string/score"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/sansserif_demibold"
+        android:gravity="center"
+        android:text="@string/world_history"
+        android:textColor="#ffffff"
+        android:textSize="50sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
