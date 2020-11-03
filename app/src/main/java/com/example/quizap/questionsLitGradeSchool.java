@@ -21,11 +21,11 @@ public class questionsLitGradeSchool {
             {"Cause","Effect","Not enough info","None of the above"},
             {"Cause","Effect","Not enough info","None of the above"},
             {"Cause","Effect","Not enough info","None of the above"},
-            {"He decided not to run in the race.","He became hungry, ate too much, and got sick","He won the 50-yard dash race","He had never trained so well before."},
+            {"He decided not to \nrun in the race.","He became hungry, ate \n too much, and got sick","He won the 50-yard \ndash race","He had never trained \nso well before."},
             {"Cause","Effect","Not enough info","None of the above"},
             {"Cause","Effect","Not enough info","None of the above"},
-            {"Because he had nothing else to do.","Because he was extremely hot and thirsty","Because he was feeling cold.","Because he was going out with his friends."},
-            {"Because she was an excellent worker.","Because she was often late or absent.","Because she went on vacation to Europe.","Because she asked for help so often."},
+            {"Because he had nothing \nelse to do.","Because he was extremely \nhot and thirsty","Because he was feeling cold.","Because he was going out \nwith his friends."},
+            {"Because she was an \nexcellent worker.","Because she was often \nlate or absent.","Because she went on \nvacation to Europe.","Because she asked for \nhelp so often."},
     };
 
     private String mAnswers [] = {
@@ -34,11 +34,11 @@ public class questionsLitGradeSchool {
             "Effect",
             "Cause",
             "Effect",
-            "He won the 50-yard dash race",
+            "He won the 50-yard \ndash race",
             "Effect",
             "Cause",
-            "Because he was extremely hot and thirsty.",
-            "Because she was an excellent worker."
+            "Because he was extremely \nhot and thirsty",
+            "Because she was an \nexcellent worker."
     };
 
     public String getQuestions(int a){

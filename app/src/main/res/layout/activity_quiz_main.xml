@@ -2,23 +2,24 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/relativeLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity_quiz_literature">
+    tools:context=".activity_quiz_main">
 
     <TextView
         android:id="@+id/question"
-        android:layout_width="371dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="196dp"
+        android:layout_width="294dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="192dp"
         android:fontFamily="@font/san_serif"
         android:text="@string/questionsText"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
+        android:textAllCaps="false"
         android:id="@+id/buttonChoiceA"
         android:layout_width="369dp"
         android:layout_height="65dp"
@@ -31,6 +32,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
+        android:textAllCaps="false"
         android:id="@+id/buttonChoiceB"
         android:layout_width="369dp"
         android:layout_height="65dp"
@@ -43,6 +45,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
+        android:textAllCaps="false"
         android:id="@+id/buttonChoiceC"
         android:layout_width="369dp"
         android:layout_height="65dp"
@@ -55,6 +58,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
+        android:textAllCaps="false"
         android:id="@+id/buttonChoiceD"
         android:layout_width="369dp"
         android:layout_height="65dp"
@@ -79,9 +83,21 @@
         android:id="@+id/score"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="116dp"
-        android:layout_marginEnd="4dp"
-        android:text="@string/todo"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/score0"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/numberQuestionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="312dp"
+        android:text="@string/questionNumber"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -89,9 +105,21 @@
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="116dp"
-        android:layout_marginEnd="44dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="28dp"
         android:text="@string/score"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="324dp"
+        android:text="@string/questiontext"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

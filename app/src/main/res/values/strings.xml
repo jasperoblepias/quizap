@@ -56,6 +56,16 @@
     <string name="buttonC">ButtonC</string>
     <string name="buttonD">ButtonD</string>
     <string name="questionsText">questionsText</string>
+    <string name="score0">0</string>
+    <string name="congrats">Congrats!</string>
+    <string name="resultSucess">Quiz completed successfully!</string>
+    <string name="resulttext">resultText</string>
+    <string name="continueBtn">Continue</string>
+    <string name="check_nanswers">Check \nAnswers</string>
+    <string name="_100_score">100% Score</string>
+    <string name="text1234">You attempt 60 questions and</string>
+    <string name="questionNumber">1</string>
+    <string name="questiontext">Question #</string>
 
 
 </resources>

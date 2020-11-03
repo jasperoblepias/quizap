@@ -8,6 +8,7 @@ import android.view.View;
 
 public class activity_literature extends AppCompatActivity {
 
+    private int number = 100;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,9 +34,14 @@ public class activity_literature extends AppCompatActivity {
 
             switch (v.getId()){
                 case R.id.gradeSchoolButton:
-                    Intent intent = new Intent(activity_literature.this, activity_quiz_literature.class);
+                    Intent intent = new Intent(activity_literature.this, activity_quiz_main.class);
+                    Bundle bundle = new Bundle();
+                    bundle.putInt("number",number);
+                    intent.putExtras(bundle);
+                    activity_literature.this.finish();
                     startActivity(intent);
                     break;
+
             }
         }
     };

@@ -9,8 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".literature_results"></activity>
-        <activity android:name=".activity_quiz_literature" />
+        <activity android:name=".quiz_results"></activity>
+        <activity android:name=".activity_quiz_main" />
         <activity
             android:name=".activity_hamburger"
             android:theme="@style/AppTheme.ThemeForHamburgerButton" />

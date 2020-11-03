@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".quiz_results"
+    android:background="@drawable/resultbg">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="128dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/trophy" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="272dp"
+        android:fontFamily="@font/sansserif_demibold"
+        android:text="@string/congrats"
+        android:textColor="#514B4F"
+        android:textSize="37sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/scoreResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/sansserif_demibold"
+        android:text="@string/_100_score"
+        android:textColor="#514B4F"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/resultSucess"
+        android:textColor="#514B4F"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scoreResult" />
+
+    <TextView
+        android:id="@+id/textResult"
+        android:layout_width="244dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/text1234"
+        android:textColor="#514B4F"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <Button
+        android:id="@+id/continueBtn"
+        android:layout_width="114dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="57dp"
+        android:background="@drawable/ok_button"
+        android:fontFamily="@font/sansserif_demibold"
+        android:text="@string/continueBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textResult" />
+
+    <Button
+        android:id="@+id/checkAns"
+        android:layout_width="114dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="57dp"
+        android:background="@drawable/ok_button"
+        android:fontFamily="@font/sansserif_demibold"
+        android:text="@string/check_nanswers"
+        app:layout_constraintStart_toEndOf="@+id/continueBtn"
+        app:layout_constraintTop_toBottomOf="@+id/textResult" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
