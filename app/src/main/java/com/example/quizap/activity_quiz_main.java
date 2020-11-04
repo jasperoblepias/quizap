@@ -71,7 +71,6 @@ public class activity_quiz_main extends AppCompatActivity {
         getChoiceA.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 if(questionNumber == questionLit.mQuestions.length){
                     if(getChoiceA.getText() == mAnswer){
                         mScore = mScore+1;
@@ -154,6 +153,7 @@ public class activity_quiz_main extends AppCompatActivity {
         getChoiceC.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 if(questionNumber == questionLit.mQuestions.length){
                     if(getChoiceC.getText() == mAnswer){
                         mScore = mScore+1;
@@ -535,6 +535,7 @@ public class activity_quiz_main extends AppCompatActivity {
     }
     private void updateQuestionNumber(int point){ questionNumberText.setText(" "+questionNumberTextInt); }
     private void updateQuestion() {
+
         mQuestions.setText(questionLit.getQuestions(questionNumber));
         getChoiceA.setText(questionLit.getChoice1(questionNumber));
         getChoiceB.setText(questionLit.getChoice2(questionNumber));
