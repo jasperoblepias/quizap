@@ -4,12 +4,12 @@ public class questionsHistoryGradeSchool {
     public String mQuestions [] = {
             "The building of the pyramids, the Roman Empire and the Dark Ages are all considered to be...",
             "Events have happened in history ____ I was born.",
-            "Events such as the two World Wars, the Industrial Revolution and the coronation of Queen Elizabeth II are all part of..",
+            "Events such as the two World Wars and the Industrial Revolution are all part of..",
             "The Roman Empire, The Aztecs and The Incas are all considered to be...",
             "Most peoples' lives can be measured in...",
             "History is about things which have happened in the past, sometimes very...",
             "Christopher Columbus was a great explorer noted for discovering what?",
-            "In the middle ages, most roads were just tracks. How did most people get around?",
+            "In the middle ages, most roads were tracks. How did most people get around?",
             "By the 18th Century, most wealthy people traveled in what?",
             "What is the name given to people who dig to find old things in the ground?",
 
@@ -18,8 +18,8 @@ public class questionsHistoryGradeSchool {
     private String mChoices [][] = {
             {"Modern history","Recent history","Ancient history","Events from the future"},
             {"not long after","around the time","soon after","long before  "},
-            {"ancient history","modern history","events which happened last week","things which may happen in the future"},
-            {"ancient civilizations","modern people","people from recent history","groups we would never learn about"},
+            {"ancient history","modern history","events which happened last week","things which may happen  " + "\n in the future"},
+            {"ancient civilizations","modern people","people from recent history","groups we would never \n learn about"},
             {"decades","centuries","weeks","minutes"},
             {"long ago","much into the future","far into next year","soon"},
             {"Potatoes","America","Cheese","Italy"},

@@ -9,7 +9,6 @@ import androidx.appcompat.app.AppCompatActivity;
 public class activity_worldhistory extends AppCompatActivity {
 
     private int number = 300;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
