@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onClick(View view) {
 
+
             switch (view.getId()){
                 case R.id.litButton:
                     Intent lit = new Intent(MainActivity.this, activity_literature.class);

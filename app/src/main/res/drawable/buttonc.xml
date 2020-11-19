@@ -2,5 +2,5 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:drawable="@drawable/selectc" android:state_pressed="true" />
     <item android:drawable="@drawable/selectc" android:state_focused="true" />
-    <item android:drawable="@drawable/option_c"></item>
+    <item android:drawable="@drawable/newoptionc"></item>
 </selector>

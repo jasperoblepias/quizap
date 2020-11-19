@@ -10,9 +10,21 @@ import android.widget.TextView;
 
 public class activity_quiz_main extends AppCompatActivity {
 
-    private questionsLitGradeSchool questionLit = new questionsLitGradeSchool();
+    private questionsLitGradeSchool questionsLitGradeSchool = new questionsLitGradeSchool();
+    private questionsLitHighSchool questionsLitHighSchool = new questionsLitHighSchool();
+    private questionsLitCollege questionsLitCollege = new questionsLitCollege();
+
     private questionsMathGradeSchool questionMath = new questionsMathGradeSchool();
+    private questionsMathHighSchool questionsMathHighSchool = new questionsMathHighSchool();
+    private questionsMathCollege questionsMathCollege = new questionsMathCollege();
+
     private questionsHistoryGradeSchool questionHistory = new questionsHistoryGradeSchool();
+    private questionsHistoryHighSchool questionsHistoryHighSchool = new questionsHistoryHighSchool();
+    private questionsHistoryCollege questionsHistoryCollege = new questionsHistoryCollege();
+
+
+
+
     private TextView mQuestions;
     private TextView mScoreView;
     private TextView questionNumberText;
@@ -48,20 +60,47 @@ public class activity_quiz_main extends AppCompatActivity {
 
 
         Bundle bundle = getIntent().getExtras();
-        int number = bundle.getInt("number");
+        int level_code = bundle.getInt("number");
 
-        if(number == 100){
-            LiteratureGradeSchool();
-        }
-        else if(number == 200){
-            MathGradeSchool();
-        }
-        else if(number == 300){
-            HistoryGradeSchool();
+
+        switch (level_code){
+            //literature subject
+            case 100:
+                LiteratureGradeSchool();
+                break;
+            case 101:
+                LiteratureHighSchool();
+                break;
+            case 102:
+                LiteratureCollege();
+                break;
+            //math subject
+            case 200:
+                MathGradeSchool();
+                break;
+            case 201:
+                MathHighSchool();
+                break;
+            case 202:
+                MathCollege();
+                break;
+            //history subject
+            case 300:
+                HistoryGradeSchool();
+                break;
+            case 301:
+                HistoryHighSchool();
+                break;
+            case 302:
+                HistoryCollege();
+                break;
         }
 
     }
 
+    //****************************************************************************
+    //*********************** Literature Grade School ****************************
+    //****************************************************************************
 
     private void LiteratureGradeSchool(){
         questionNumberTextInt = questionNumberTextInt+1;
@@ -71,7 +110,7 @@ public class activity_quiz_main extends AppCompatActivity {
         getChoiceA.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(questionNumber == questionLit.mQuestions.length){
+                if(questionNumber == questionsLitGradeSchool.mQuestions.length){
                     if(getChoiceA.getText() == mAnswer){
                         mScore = mScore+1;
                         updateScore(mScore);
@@ -113,7 +152,7 @@ public class activity_quiz_main extends AppCompatActivity {
         getChoiceB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(questionNumber == questionLit.mQuestions.length){
+                if(questionNumber == questionsLitGradeSchool.mQuestions.length){
                     if(getChoiceB.getText() == mAnswer){
                         mScore = mScore+1;
                         updateScore(mScore);
@@ -154,7 +193,7 @@ public class activity_quiz_main extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                if(questionNumber == questionLit.mQuestions.length){
+                if(questionNumber == questionsLitGradeSchool.mQuestions.length){
                     if(getChoiceC.getText() == mAnswer){
                         mScore = mScore+1;
                         updateScore(mScore);
@@ -193,7 +232,7 @@ public class activity_quiz_main extends AppCompatActivity {
         getChoiceD.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(questionNumber == questionLit.mQuestions.length){
+                if(questionNumber == questionsLitGradeSchool.mQuestions.length){
                     if(getChoiceD.getText() == mAnswer){
                         mScore = mScore+1;
                         updateScore(mScore);
@@ -230,11 +269,356 @@ public class activity_quiz_main extends AppCompatActivity {
         });
     }
 
+    //****************************************************************************
+    //*********************** Literature High School ****************************
+    //****************************************************************************
+
+    private void LiteratureHighSchool(){
+        questionNumberTextInt = questionNumberTextInt+1;
+        updateQuestion();
+
+
+        getChoiceA.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(questionNumber == questionsLitHighSchool.mQuestions.length){
+                    if(getChoiceA.getText() == mAnswer){
+                        mScore = mScore+1;
+                        updateScore(mScore);
+
+                        Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putInt("finalScore",mScore);
+                        intent.putExtras(bundle);
+                        activity_quiz_main.this.finish();
+                        startActivity(intent);
+                    }
+                    else{
+                        Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putInt("finalScore",mScore);
+                        intent.putExtras(bundle);
+                        activity_quiz_main.this.finish();
+                        startActivity(intent);
+                    }
+
+                }
+
+                else if(getChoiceA.getText() == mAnswer){
+                    mScore = mScore+1;
+                    updateScore(mScore);
+                    questionNumberTextInt = questionNumberTextInt+1;
+                    updateQuestionNumber(questionNumberTextInt);
+                    updateQuestion();
+                }
+                else {
+                    questionNumberTextInt = questionNumberTextInt+1;
+                    updateQuestionNumber(questionNumberTextInt);
+                    updateQuestion();
+                }
+
+            }
+        });
+
+        getChoiceB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(questionNumber == questionsLitHighSchool.mQuestions.length){
+                    if(getChoiceB.getText() == mAnswer){
+                        mScore = mScore+1;
+                        updateScore(mScore);
+                        Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putInt("finalScore",mScore);
+                        intent.putExtras(bundle);
+                        activity_quiz_main.this.finish();
+                        startActivity(intent);
+                    }
+                    else{
+                        Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putInt("finalScore",mScore);
+                        intent.putExtras(bundle);
+                        activity_quiz_main.this.finish();
+                        startActivity(intent);
+                    }
+                }
+
+                else if(getChoiceB.getText() == mAnswer){
+                    mScore = mScore+1;
+                    updateScore(mScore);
+                    questionNumberTextInt = questionNumberTextInt+1;
+                    updateQuestionNumber(questionNumberTextInt);
+                    updateQuestion();
+                }
+                else {
+                    questionNumberTextInt = questionNumberTextInt+1;
+                    updateQuestionNumber(questionNumberTextInt);
+                    updateQuestion();
+                }
+
+            }
+        });
+
+        getChoiceC.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if(questionNumber == questionsLitHighSchool.mQuestions.length){
+                    if(getChoiceC.getText() == mAnswer){
+                        mScore = mScore+1;
+                        updateScore(mScore);
+                        Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putInt("finalScore",mScore);
+                        intent.putExtras(bundle);
+                        activity_quiz_main.this.finish();
+                        startActivity(intent);
+                    }
+                    else{
+                        Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putInt("finalScore",mScore);
+                        intent.putExtras(bundle);
+                        activity_quiz_main.this.finish();
+                        startActivity(intent);
+                    }
+                }
+
+                else if(getChoiceC.getText() == mAnswer){
+                    mScore = mScore+1;
+                    updateScore(mScore);
+                    questionNumberTextInt = questionNumberTextInt+1;
+                    updateQuestionNumber(questionNumberTextInt);
+                    updateQuestion();
+                }
+                else {
+                    questionNumberTextInt = questionNumberTextInt+1;
+                    updateQuestionNumber(questionNumberTextInt);
+                    updateQuestion();
+                }
+            }
+        });
+
+        getChoiceD.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(questionNumber == questionsLitHighSchool.mQuestions.length){
+                    if(getChoiceD.getText() == mAnswer){
+                        mScore = mScore+1;
+                        updateScore(mScore);
+                        Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putInt("finalScore",mScore);
+                        intent.putExtras(bundle);
+                        activity_quiz_main.this.finish();
+                        startActivity(intent);
+                    }
+                    else{
+                        Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putInt("finalScore",mScore);
+                        intent.putExtras(bundle);
+                        activity_quiz_main.this.finish();
+                        startActivity(intent);
+                    }
+                }
+
+                else if(getChoiceD.getText() == mAnswer){
+                    mScore = mScore+1;
+                    updateScore(mScore);
+                    questionNumberTextInt = questionNumberTextInt+1;
+                    updateQuestionNumber(questionNumberTextInt);
+                    updateQuestion();
+                }
+                else {
+                    questionNumberTextInt = questionNumberTextInt+1;
+                    updateQuestionNumber(questionNumberTextInt);
+                    updateQuestion();
+                }
+            }
+        });
+    }
+
+    //****************************************************************************
+    //************************** Literature College ******************************
+    //****************************************************************************
+
+    private void LiteratureCollege(){
+        questionNumberTextInt = questionNumberTextInt+1;
+        updateQuestion();
+
+
+        getChoiceA.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(questionNumber == questionsLitCollege.mQuestions.length){
+                    if(getChoiceA.getText() == mAnswer){
+                        mScore = mScore+1;
+                        updateScore(mScore);
+
+                        Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putInt("finalScore",mScore);
+                        intent.putExtras(bundle);
+                        activity_quiz_main.this.finish();
+                        startActivity(intent);
+                    }
+                    else{
+                        Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putInt("finalScore",mScore);
+                        intent.putExtras(bundle);
+                        activity_quiz_main.this.finish();
+                        startActivity(intent);
+                    }
+
+                }
+
+                else if(getChoiceA.getText() == mAnswer){
+                    mScore = mScore+1;
+                    updateScore(mScore);
+                    questionNumberTextInt = questionNumberTextInt+1;
+                    updateQuestionNumber(questionNumberTextInt);
+                    updateQuestion();
+                }
+                else {
+                    questionNumberTextInt = questionNumberTextInt+1;
+                    updateQuestionNumber(questionNumberTextInt);
+                    updateQuestion();
+                }
+
+            }
+        });
+
+        getChoiceB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(questionNumber == questionsLitCollege.mQuestions.length){
+                    if(getChoiceB.getText() == mAnswer){
+                        mScore = mScore+1;
+                        updateScore(mScore);
+                        Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putInt("finalScore",mScore);
+                        intent.putExtras(bundle);
+                        activity_quiz_main.this.finish();
+                        startActivity(intent);
+                    }
+                    else{
+                        Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putInt("finalScore",mScore);
+                        intent.putExtras(bundle);
+                        activity_quiz_main.this.finish();
+                        startActivity(intent);
+                    }
+                }
+
+                else if(getChoiceB.getText() == mAnswer){
+                    mScore = mScore+1;
+                    updateScore(mScore);
+                    questionNumberTextInt = questionNumberTextInt+1;
+                    updateQuestionNumber(questionNumberTextInt);
+                    updateQuestion();
+                }
+                else {
+                    questionNumberTextInt = questionNumberTextInt+1;
+                    updateQuestionNumber(questionNumberTextInt);
+                    updateQuestion();
+                }
+
+            }
+        });
+
+        getChoiceC.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if(questionNumber == questionsLitCollege.mQuestions.length){
+                    if(getChoiceC.getText() == mAnswer){
+                        mScore = mScore+1;
+                        updateScore(mScore);
+                        Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putInt("finalScore",mScore);
+                        intent.putExtras(bundle);
+                        activity_quiz_main.this.finish();
+                        startActivity(intent);
+                    }
+                    else{
+                        Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putInt("finalScore",mScore);
+                        intent.putExtras(bundle);
+                        activity_quiz_main.this.finish();
+                        startActivity(intent);
+                    }
+                }
+
+                else if(getChoiceC.getText() == mAnswer){
+                    mScore = mScore+1;
+                    updateScore(mScore);
+                    questionNumberTextInt = questionNumberTextInt+1;
+                    updateQuestionNumber(questionNumberTextInt);
+                    updateQuestion();
+                }
+                else {
+                    questionNumberTextInt = questionNumberTextInt+1;
+                    updateQuestionNumber(questionNumberTextInt);
+                    updateQuestion();
+                }
+            }
+        });
+
+        getChoiceD.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(questionNumber == questionsLitCollege.mQuestions.length){
+                    if(getChoiceD.getText() == mAnswer){
+                        mScore = mScore+1;
+                        updateScore(mScore);
+                        Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putInt("finalScore",mScore);
+                        intent.putExtras(bundle);
+                        activity_quiz_main.this.finish();
+                        startActivity(intent);
+                    }
+                    else{
+                        Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putInt("finalScore",mScore);
+                        intent.putExtras(bundle);
+                        activity_quiz_main.this.finish();
+                        startActivity(intent);
+                    }
+                }
+
+                else if(getChoiceD.getText() == mAnswer){
+                    mScore = mScore+1;
+                    updateScore(mScore);
+                    questionNumberTextInt = questionNumberTextInt+1;
+                    updateQuestionNumber(questionNumberTextInt);
+                    updateQuestion();
+                }
+                else {
+                    questionNumberTextInt = questionNumberTextInt+1;
+                    updateQuestionNumber(questionNumberTextInt);
+                    updateQuestion();
+                }
+            }
+        });
+    }
+
+    //****************************************************************************
     //***************************** Math Grade School ****************************
+    //****************************************************************************
+
 
     private void MathGradeSchool(){
         questionNumberTextInt = questionNumberTextInt+1;
-        updateQuestionMath();
+        updateQuestion();
 
 
         getChoiceA.setOnClickListener(new View.OnClickListener() {
@@ -269,12 +653,12 @@ public class activity_quiz_main extends AppCompatActivity {
                     updateScore(mScore);
                     questionNumberTextInt = questionNumberTextInt+1;
                     updateQuestionNumber(questionNumberTextInt);
-                    updateQuestionMath();
+                    updateQuestion();
                 }
                 else {
                     questionNumberTextInt = questionNumberTextInt+1;
                     updateQuestionNumber(questionNumberTextInt);
-                    updateQuestionMath();
+                    updateQuestion();
                 }
 
             }
@@ -283,7 +667,7 @@ public class activity_quiz_main extends AppCompatActivity {
         getChoiceB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(questionNumber == questionLit.mQuestions.length){
+                if(questionNumber == questionsLitGradeSchool.mQuestions.length){
                     if(getChoiceB.getText() == mAnswer){
                         mScore = mScore+1;
                         updateScore(mScore);
@@ -309,12 +693,12 @@ public class activity_quiz_main extends AppCompatActivity {
                     updateScore(mScore);
                     questionNumberTextInt = questionNumberTextInt+1;
                     updateQuestionNumber(questionNumberTextInt);
-                    updateQuestionMath();
+                    updateQuestion();
                 }
                 else {
                     questionNumberTextInt = questionNumberTextInt+1;
                     updateQuestionNumber(questionNumberTextInt);
-                    updateQuestionMath();
+                    updateQuestion();
                 }
 
             }
@@ -323,7 +707,7 @@ public class activity_quiz_main extends AppCompatActivity {
         getChoiceC.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(questionNumber == questionLit.mQuestions.length){
+                if(questionNumber == questionsLitGradeSchool.mQuestions.length){
                     if(getChoiceC.getText() == mAnswer){
                         mScore = mScore+1;
                         updateScore(mScore);
@@ -349,12 +733,12 @@ public class activity_quiz_main extends AppCompatActivity {
                     updateScore(mScore);
                     questionNumberTextInt = questionNumberTextInt+1;
                     updateQuestionNumber(questionNumberTextInt);
-                    updateQuestionMath();
+                    updateQuestion();
                 }
                 else {
                     questionNumberTextInt = questionNumberTextInt+1;
                     updateQuestionNumber(questionNumberTextInt);
-                    updateQuestionMath();
+                    updateQuestion();
                 }
             }
         });
@@ -362,7 +746,7 @@ public class activity_quiz_main extends AppCompatActivity {
         getChoiceD.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(questionNumber == questionLit.mQuestions.length){
+                if(questionNumber == questionsLitGradeSchool.mQuestions.length){
                     if(getChoiceD.getText() == mAnswer){
                         mScore = mScore+1;
                         updateScore(mScore);
@@ -388,23 +772,364 @@ public class activity_quiz_main extends AppCompatActivity {
                     updateScore(mScore);
                     questionNumberTextInt = questionNumberTextInt+1;
                     updateQuestionNumber(questionNumberTextInt);
-                    updateQuestionMath();
+                    updateQuestion();
                 }
                 else {
                     questionNumberTextInt = questionNumberTextInt+1;
                     updateQuestionNumber(questionNumberTextInt);
-                    updateQuestionMath();
+                    updateQuestion();
                 }
             }
         });
     }
 
+    //****************************************************************************
+    //***************************** Math High School *****************************
+    //****************************************************************************
 
-    // **************************************** History Grade School ********************************************
+    private void MathHighSchool(){
+        questionNumberTextInt = questionNumberTextInt+1;
+        updateQuestion();
 
+
+        getChoiceA.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if(questionNumber == questionMath.mQuestions.length){
+                    if(getChoiceA.getText() == mAnswer){
+                        mScore = mScore+1;
+                        updateScore(mScore);
+
+                        Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putInt("finalScore",mScore);
+                        intent.putExtras(bundle);
+                        activity_quiz_main.this.finish();
+                        startActivity(intent);
+                    }
+                    else{
+                        Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putInt("finalScore",mScore);
+                        intent.putExtras(bundle);
+                        activity_quiz_main.this.finish();
+                        startActivity(intent);
+                    }
+
+                }
+
+                else if(getChoiceA.getText() == mAnswer){
+                    mScore = mScore+1;
+                    updateScore(mScore);
+                    questionNumberTextInt = questionNumberTextInt+1;
+                    updateQuestionNumber(questionNumberTextInt);
+                    updateQuestion();
+                }
+                else {
+                    questionNumberTextInt = questionNumberTextInt+1;
+                    updateQuestionNumber(questionNumberTextInt);
+                    updateQuestion();
+                }
+
+            }
+        });
+
+        getChoiceB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(questionNumber == questionsLitGradeSchool.mQuestions.length){
+                    if(getChoiceB.getText() == mAnswer){
+                        mScore = mScore+1;
+                        updateScore(mScore);
+                        Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putInt("finalScore",mScore);
+                        intent.putExtras(bundle);
+                        activity_quiz_main.this.finish();
+                        startActivity(intent);
+                    }
+                    else{
+                        Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putInt("finalScore",mScore);
+                        intent.putExtras(bundle);
+                        activity_quiz_main.this.finish();
+                        startActivity(intent);
+                    }
+                }
+
+                else if(getChoiceB.getText() == mAnswer){
+                    mScore = mScore+1;
+                    updateScore(mScore);
+                    questionNumberTextInt = questionNumberTextInt+1;
+                    updateQuestionNumber(questionNumberTextInt);
+                    updateQuestion();
+                }
+                else {
+                    questionNumberTextInt = questionNumberTextInt+1;
+                    updateQuestionNumber(questionNumberTextInt);
+                    updateQuestion();
+                }
+
+            }
+        });
+
+        getChoiceC.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(questionNumber == questionsLitGradeSchool.mQuestions.length){
+                    if(getChoiceC.getText() == mAnswer){
+                        mScore = mScore+1;
+                        updateScore(mScore);
+                        Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putInt("finalScore",mScore);
+                        intent.putExtras(bundle);
+                        activity_quiz_main.this.finish();
+                        startActivity(intent);
+                    }
+                    else{
+                        Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putInt("finalScore",mScore);
+                        intent.putExtras(bundle);
+                        activity_quiz_main.this.finish();
+                        startActivity(intent);
+                    }
+                }
+
+                else if(getChoiceC.getText() == mAnswer){
+                    mScore = mScore+1;
+                    updateScore(mScore);
+                    questionNumberTextInt = questionNumberTextInt+1;
+                    updateQuestionNumber(questionNumberTextInt);
+                    updateQuestion();
+                }
+                else {
+                    questionNumberTextInt = questionNumberTextInt+1;
+                    updateQuestionNumber(questionNumberTextInt);
+                    updateQuestion();
+                }
+            }
+        });
+
+        getChoiceD.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(questionNumber == questionsLitGradeSchool.mQuestions.length){
+                    if(getChoiceD.getText() == mAnswer){
+                        mScore = mScore+1;
+                        updateScore(mScore);
+                        Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putInt("finalScore",mScore);
+                        intent.putExtras(bundle);
+                        activity_quiz_main.this.finish();
+                        startActivity(intent);
+                    }
+                    else{
+                        Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putInt("finalScore",mScore);
+                        intent.putExtras(bundle);
+                        activity_quiz_main.this.finish();
+                        startActivity(intent);
+                    }
+                }
+
+                else if(getChoiceD.getText() == mAnswer){
+                    mScore = mScore+1;
+                    updateScore(mScore);
+                    questionNumberTextInt = questionNumberTextInt+1;
+                    updateQuestionNumber(questionNumberTextInt);
+                    updateQuestion();
+                }
+                else {
+                    questionNumberTextInt = questionNumberTextInt+1;
+                    updateQuestionNumber(questionNumberTextInt);
+                    updateQuestion();
+                }
+            }
+        });
+    }
+    //****************************************************************************
+    //****************************** Math College ********************************
+    //****************************************************************************
+
+    private void MathCollege(){
+        questionNumberTextInt = questionNumberTextInt+1;
+        updateQuestion();
+
+
+        getChoiceA.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if(questionNumber == questionsMathCollege.mQuestions.length){
+                    if(getChoiceA.getText() == mAnswer){
+                        mScore = mScore+1;
+                        updateScore(mScore);
+
+                        Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putInt("finalScore",mScore);
+                        intent.putExtras(bundle);
+                        activity_quiz_main.this.finish();
+                        startActivity(intent);
+                    }
+                    else{
+                        Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putInt("finalScore",mScore);
+                        intent.putExtras(bundle);
+                        activity_quiz_main.this.finish();
+                        startActivity(intent);
+                    }
+
+                }
+
+                else if(getChoiceA.getText() == mAnswer){
+                    mScore = mScore+1;
+                    updateScore(mScore);
+                    questionNumberTextInt = questionNumberTextInt+1;
+                    updateQuestionNumber(questionNumberTextInt);
+                    updateQuestion();
+                }
+                else {
+                    questionNumberTextInt = questionNumberTextInt+1;
+                    updateQuestionNumber(questionNumberTextInt);
+                    updateQuestion();
+                }
+
+            }
+        });
+
+        getChoiceB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(questionNumber == questionsMathCollege.mQuestions.length){
+                    if(getChoiceB.getText() == mAnswer){
+                        mScore = mScore+1;
+                        updateScore(mScore);
+                        Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putInt("finalScore",mScore);
+                        intent.putExtras(bundle);
+                        activity_quiz_main.this.finish();
+                        startActivity(intent);
+                    }
+                    else{
+                        Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putInt("finalScore",mScore);
+                        intent.putExtras(bundle);
+                        activity_quiz_main.this.finish();
+                        startActivity(intent);
+                    }
+                }
+
+                else if(getChoiceB.getText() == mAnswer){
+                    mScore = mScore+1;
+                    updateScore(mScore);
+                    questionNumberTextInt = questionNumberTextInt+1;
+                    updateQuestionNumber(questionNumberTextInt);
+                    updateQuestion();
+                }
+                else {
+                    questionNumberTextInt = questionNumberTextInt+1;
+                    updateQuestionNumber(questionNumberTextInt);
+                    updateQuestion();
+                }
+
+            }
+        });
+
+        getChoiceC.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(questionNumber == questionsMathCollege.mQuestions.length){
+                    if(getChoiceC.getText() == mAnswer){
+                        mScore = mScore+1;
+                        updateScore(mScore);
+                        Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putInt("finalScore",mScore);
+                        intent.putExtras(bundle);
+                        activity_quiz_main.this.finish();
+                        startActivity(intent);
+                    }
+                    else{
+                        Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putInt("finalScore",mScore);
+                        intent.putExtras(bundle);
+                        activity_quiz_main.this.finish();
+                        startActivity(intent);
+                    }
+                }
+
+                else if(getChoiceC.getText() == mAnswer){
+                    mScore = mScore+1;
+                    updateScore(mScore);
+                    questionNumberTextInt = questionNumberTextInt+1;
+                    updateQuestionNumber(questionNumberTextInt);
+                    updateQuestion();
+                }
+                else {
+                    questionNumberTextInt = questionNumberTextInt+1;
+                    updateQuestionNumber(questionNumberTextInt);
+                    updateQuestion();
+                }
+            }
+        });
+
+        getChoiceD.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(questionNumber == questionsMathCollege.mQuestions.length){
+                    if(getChoiceD.getText() == mAnswer){
+                        mScore = mScore+1;
+                        updateScore(mScore);
+                        Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putInt("finalScore",mScore);
+                        intent.putExtras(bundle);
+                        activity_quiz_main.this.finish();
+                        startActivity(intent);
+                    }
+                    else{
+                        Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putInt("finalScore",mScore);
+                        intent.putExtras(bundle);
+                        activity_quiz_main.this.finish();
+                        startActivity(intent);
+                    }
+                }
+
+                else if(getChoiceD.getText() == mAnswer){
+                    mScore = mScore+1;
+                    updateScore(mScore);
+                    questionNumberTextInt = questionNumberTextInt+1;
+                    updateQuestionNumber(questionNumberTextInt);
+                    updateQuestion();
+                }
+                else {
+                    questionNumberTextInt = questionNumberTextInt+1;
+                    updateQuestionNumber(questionNumberTextInt);
+                    updateQuestion();
+                }
+            }
+        });
+    }
+
+    //****************************************************************************
+    //**************************History Grade School *****************************
+    //****************************************************************************
 
     private void HistoryGradeSchool() {
-
+        questionNumberTextInt = questionNumberTextInt+1;
         updateQuestion();
 
         getChoiceA.setOnClickListener(new View.OnClickListener() {
@@ -428,10 +1153,14 @@ public class activity_quiz_main extends AppCompatActivity {
                 else if(getChoiceA.getText() == mAnswer){
                     mScore = mScore+1;
                     updateScore(mScore);
-                    updateQuestionHistory();
+                    questionNumberTextInt = questionNumberTextInt+1;
+                    updateQuestionNumber(questionNumberTextInt);
+                    updateQuestion();
                 }
                 else {
-                    updateQuestionHistory();
+                    questionNumberTextInt = questionNumberTextInt+1;
+                    updateQuestionNumber(questionNumberTextInt);
+                    updateQuestion();
                 }
 
             }
@@ -456,10 +1185,14 @@ public class activity_quiz_main extends AppCompatActivity {
                 else if(getChoiceB.getText() == mAnswer){
                     mScore = mScore+1;
                     updateScore(mScore);
-                    updateQuestionHistory();
+                    questionNumberTextInt = questionNumberTextInt+1;
+                    updateQuestionNumber(questionNumberTextInt);
+                    updateQuestion();
                 }
                 else {
-                    updateQuestionHistory();
+                    questionNumberTextInt = questionNumberTextInt+1;
+                    updateQuestionNumber(questionNumberTextInt);
+                    updateQuestion();
                 }
 
             }
@@ -484,10 +1217,14 @@ public class activity_quiz_main extends AppCompatActivity {
                 else if(getChoiceC.getText() == mAnswer){
                     mScore = mScore+1;
                     updateScore(mScore);
-                    updateQuestionHistory();
+                    questionNumberTextInt = questionNumberTextInt+1;
+                    updateQuestionNumber(questionNumberTextInt);
+                    updateQuestion();
                 }
                 else {
-                    updateQuestionHistory();
+                    questionNumberTextInt = questionNumberTextInt+1;
+                    updateQuestionNumber(questionNumberTextInt);
+                    updateQuestion();
                 }
             }
         });
@@ -519,49 +1256,449 @@ public class activity_quiz_main extends AppCompatActivity {
                 else if(getChoiceD.getText() == mAnswer){
                     mScore = mScore+1;
                     updateScore(mScore);
-                    updateQuestionHistory();
+                    questionNumberTextInt = questionNumberTextInt+1;
+                    updateQuestionNumber(questionNumberTextInt);
+                    updateQuestion();
                 }
                 else {
-                    updateQuestionHistory();
+                    questionNumberTextInt = questionNumberTextInt+1;
+                    updateQuestionNumber(questionNumberTextInt);
+                    updateQuestion();
                 }
             }
         });
         
     }
-   
+
+    //****************************************************************************
+    //*************************** History Highschool *****************************
+    //****************************************************************************
+
+
+    private void HistoryHighSchool() {
+        questionNumberTextInt = questionNumberTextInt+1;
+        updateQuestion();
+
+        getChoiceA.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(questionNumber == questionsHistoryHighSchool.mQuestions.length){
+                    if(getChoiceA.getText() == mAnswer){
+                        mScore = mScore+1;
+                        updateScore(mScore);
+
+                        Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putInt("finalScore",mScore);
+                        intent.putExtras(bundle);
+                        activity_quiz_main.this.finish();
+                        startActivity(intent);
+                    }
+
+                }
+
+                else if(getChoiceA.getText() == mAnswer){
+                    mScore = mScore+1;
+                    updateScore(mScore);
+                    questionNumberTextInt = questionNumberTextInt+1;
+                    updateQuestionNumber(questionNumberTextInt);
+                    updateQuestion();
+                }
+                else {
+                    questionNumberTextInt = questionNumberTextInt+1;
+                    updateQuestionNumber(questionNumberTextInt);
+                    updateQuestion();
+                }
+
+            }
+        });
+
+        getChoiceB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(questionNumber == questionsHistoryHighSchool.mQuestions.length){
+                    if(getChoiceB.getText() == mAnswer){
+                        mScore = mScore+1;
+                        updateScore(mScore);
+                        Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putInt("finalScore",mScore);
+                        intent.putExtras(bundle);
+                        activity_quiz_main.this.finish();
+                        startActivity(intent);
+                    }
+                }
+
+                else if(getChoiceB.getText() == mAnswer){
+                    mScore = mScore+1;
+                    updateScore(mScore);
+                    questionNumberTextInt = questionNumberTextInt+1;
+                    updateQuestionNumber(questionNumberTextInt);
+                    updateQuestion();
+                }
+                else {
+                    questionNumberTextInt = questionNumberTextInt+1;
+                    updateQuestionNumber(questionNumberTextInt);
+                    updateQuestion();
+                }
+
+            }
+        });
+
+        getChoiceC.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(questionNumber == questionsHistoryHighSchool.mQuestions.length){
+                    if(getChoiceC.getText() == mAnswer){
+                        mScore = mScore+1;
+                        updateScore(mScore);
+                        Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putInt("finalScore",mScore);
+                        intent.putExtras(bundle);
+                        activity_quiz_main.this.finish();
+                        startActivity(intent);
+                    }
+                }
+
+                else if(getChoiceC.getText() == mAnswer){
+                    mScore = mScore+1;
+                    updateScore(mScore);
+                    questionNumberTextInt = questionNumberTextInt+1;
+                    updateQuestionNumber(questionNumberTextInt);
+                    updateQuestion();
+                }
+                else {
+                    questionNumberTextInt = questionNumberTextInt+1;
+                    updateQuestionNumber(questionNumberTextInt);
+                    updateQuestion();
+                }
+            }
+        });
+
+        getChoiceD.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(questionNumber == questionsHistoryHighSchool.mQuestions.length){
+                    if(getChoiceD.getText() == mAnswer){
+                        mScore = mScore+1;
+                        updateScore(mScore);
+                        Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putInt("finalScore",mScore);
+                        intent.putExtras(bundle);
+                        activity_quiz_main.this.finish();
+                        startActivity(intent);
+                    }
+                    else{
+                        Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putInt("finalScore",mScore);
+                        intent.putExtras(bundle);
+                        activity_quiz_main.this.finish();
+                        startActivity(intent);
+                    }
+                }
+
+                else if(getChoiceD.getText() == mAnswer){
+                    mScore = mScore+1;
+                    updateScore(mScore);
+                    questionNumberTextInt = questionNumberTextInt+1;
+                    updateQuestionNumber(questionNumberTextInt);
+                    updateQuestion();
+                }
+                else {
+                    questionNumberTextInt = questionNumberTextInt+1;
+                    updateQuestionNumber(questionNumberTextInt);
+                    updateQuestion();
+                }
+            }
+        });
+
+    }
+
+    //****************************************************************************
+    //*************************** History College ********************************
+    //****************************************************************************
+
+
+    private void HistoryCollege() {
+        questionNumberTextInt = questionNumberTextInt+1;
+        updateQuestion();
+
+        getChoiceA.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(questionNumber == questionsHistoryCollege.mQuestions.length){
+                    if(getChoiceA.getText() == mAnswer){
+                        mScore = mScore+1;
+                        updateScore(mScore);
+
+                        Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putInt("finalScore",mScore);
+                        intent.putExtras(bundle);
+                        activity_quiz_main.this.finish();
+                        startActivity(intent);
+                    }
+
+                }
+
+                else if(getChoiceA.getText() == mAnswer){
+                    mScore = mScore+1;
+                    updateScore(mScore);
+                    questionNumberTextInt = questionNumberTextInt+1;
+                    updateQuestionNumber(questionNumberTextInt);
+                    updateQuestion();
+                }
+                else {
+                    questionNumberTextInt = questionNumberTextInt+1;
+                    updateQuestionNumber(questionNumberTextInt);
+                    updateQuestion();
+                }
+
+            }
+        });
+
+        getChoiceB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(questionNumber == questionsHistoryCollege.mQuestions.length){
+                    if(getChoiceB.getText() == mAnswer){
+                        mScore = mScore+1;
+                        updateScore(mScore);
+                        Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putInt("finalScore",mScore);
+                        intent.putExtras(bundle);
+                        activity_quiz_main.this.finish();
+                        startActivity(intent);
+                    }
+                }
+
+                else if(getChoiceB.getText() == mAnswer){
+                    mScore = mScore+1;
+                    updateScore(mScore);
+                    questionNumberTextInt = questionNumberTextInt+1;
+                    updateQuestionNumber(questionNumberTextInt);
+                    updateQuestion();
+                }
+                else {
+                    questionNumberTextInt = questionNumberTextInt+1;
+                    updateQuestionNumber(questionNumberTextInt);
+                    updateQuestion();
+                }
+
+            }
+        });
+
+        getChoiceC.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(questionNumber == questionsHistoryCollege.mQuestions.length){
+                    if(getChoiceC.getText() == mAnswer){
+                        mScore = mScore+1;
+                        updateScore(mScore);
+                        Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putInt("finalScore",mScore);
+                        intent.putExtras(bundle);
+                        activity_quiz_main.this.finish();
+                        startActivity(intent);
+                    }
+                }
+
+                else if(getChoiceC.getText() == mAnswer){
+                    mScore = mScore+1;
+                    updateScore(mScore);
+                    questionNumberTextInt = questionNumberTextInt+1;
+                    updateQuestionNumber(questionNumberTextInt);
+                    updateQuestion();
+                }
+                else {
+                    questionNumberTextInt = questionNumberTextInt+1;
+                    updateQuestionNumber(questionNumberTextInt);
+                    updateQuestion();
+                }
+            }
+        });
+
+        getChoiceD.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(questionNumber == questionsHistoryCollege.mQuestions.length){
+                    if(getChoiceD.getText() == mAnswer){
+                        mScore = mScore+1;
+                        updateScore(mScore);
+                        Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putInt("finalScore",mScore);
+                        intent.putExtras(bundle);
+                        activity_quiz_main.this.finish();
+                        startActivity(intent);
+                    }
+                    else{
+                        Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putInt("finalScore",mScore);
+                        intent.putExtras(bundle);
+                        activity_quiz_main.this.finish();
+                        startActivity(intent);
+                    }
+                }
+
+                else if(getChoiceD.getText() == mAnswer){
+                    mScore = mScore+1;
+                    updateScore(mScore);
+                    questionNumberTextInt = questionNumberTextInt+1;
+                    updateQuestionNumber(questionNumberTextInt);
+                    updateQuestion();
+                }
+                else {
+                    questionNumberTextInt = questionNumberTextInt+1;
+                    updateQuestionNumber(questionNumberTextInt);
+                    updateQuestion();
+                }
+            }
+        });
+
+    }
 
     private void updateScore(int point){
         mScoreView.setText(""+mScore);
     }
     private void updateQuestionNumber(int point){ questionNumberText.setText(" "+questionNumberTextInt); }
-    private void updateQuestion() {
 
-        mQuestions.setText(questionLit.getQuestions(questionNumber));
-        getChoiceA.setText(questionLit.getChoice1(questionNumber));
-        getChoiceB.setText(questionLit.getChoice2(questionNumber));
-        getChoiceC.setText(questionLit.getChoice3(questionNumber));
-        getChoiceD.setText(questionLit.getChoice4(questionNumber));
-        mAnswer = questionLit.getCorrectAnswer(questionNumber);
-        questionNumber++;
+//    private void updatequestionsLitGradeSchool() {
+//
+//        mQuestions.setText(questionsLitGradeSchool.getQuestions(questionNumber));
+//        getChoiceA.setText(questionsLitGradeSchool.getChoice1(questionNumber));
+//        getChoiceB.setText(questionsLitGradeSchool.getChoice2(questionNumber));
+//        getChoiceC.setText(questionsLitGradeSchool.getChoice3(questionNumber));
+//        getChoiceD.setText(questionsLitGradeSchool.getChoice4(questionNumber));
+//        mAnswer = questionsLitGradeSchool.getCorrectAnswer(questionNumber);
+//        questionNumber++;
+//    }
+//
+//    private void updateQuestionMath() {
+//        mQuestions.setText(questionMath.getQuestions(questionNumber));
+//        getChoiceA.setText(questionMath.getChoice1(questionNumber));
+//        getChoiceB.setText(questionMath.getChoice2(questionNumber));
+//        getChoiceC.setText(questionMath.getChoice3(questionNumber));
+//        getChoiceD.setText(questionMath.getChoice4(questionNumber));
+//        mAnswer = questionMath.getCorrectAnswer(questionNumber);
+//        questionNumber++;
+//    }
+//
+//    private void updateQuestionHistory() {
+//        mQuestions.setText(questionHistory.getQuestions(questionNumber));
+//        getChoiceA.setText(questionHistory.getChoice1(questionNumber));
+//        getChoiceB.setText(questionHistory.getChoice2(questionNumber));
+//        getChoiceC.setText(questionHistory.getChoice3(questionNumber));
+//        getChoiceD.setText(questionHistory.getChoice4(questionNumber));
+//        mAnswer = questionHistory.getCorrectAnswer(questionNumber);
+//        questionNumber++;
+//    }
+
+    private void updateQuestion(){
+
+        Bundle bundle = getIntent().getExtras();
+        int level_code = bundle.getInt("number");
+
+        switch(level_code){
+            case 100:
+                mQuestions.setText(questionsLitGradeSchool.getQuestions(questionNumber));
+                getChoiceA.setText(questionsLitGradeSchool.getChoice1(questionNumber));
+                getChoiceB.setText(questionsLitGradeSchool.getChoice2(questionNumber));
+                getChoiceC.setText(questionsLitGradeSchool.getChoice3(questionNumber));
+                getChoiceD.setText(questionsLitGradeSchool.getChoice4(questionNumber));
+                mAnswer = questionsLitGradeSchool.getCorrectAnswer(questionNumber);
+                questionNumber++;
+                break;
+
+            case 101:
+                mQuestions.setText(questionsLitHighSchool.getQuestions(questionNumber));
+                getChoiceA.setText(questionsLitHighSchool.getChoice1(questionNumber));
+                getChoiceB.setText(questionsLitHighSchool.getChoice2(questionNumber));
+                getChoiceC.setText(questionsLitHighSchool.getChoice3(questionNumber));
+                getChoiceD.setText(questionsLitHighSchool.getChoice4(questionNumber));
+                mAnswer = questionsLitHighSchool.getCorrectAnswer(questionNumber);
+                questionNumber++;
+                break;
+
+            case 102:
+                mQuestions.setText(questionsLitCollege.getQuestions(questionNumber));
+                getChoiceA.setText(questionsLitCollege.getChoice1(questionNumber));
+                getChoiceB.setText(questionsLitCollege.getChoice2(questionNumber));
+                getChoiceC.setText(questionsLitCollege.getChoice3(questionNumber));
+                getChoiceD.setText(questionsLitCollege.getChoice4(questionNumber));
+                mAnswer = questionsLitCollege.getCorrectAnswer(questionNumber);
+                questionNumber++;
+                break;
+
+
+            case 200:
+                mQuestions.setText(questionMath.getQuestions(questionNumber));
+                getChoiceA.setText(questionMath.getChoice1(questionNumber));
+                getChoiceB.setText(questionMath.getChoice2(questionNumber));
+                getChoiceC.setText(questionMath.getChoice3(questionNumber));
+                getChoiceD.setText(questionMath.getChoice4(questionNumber));
+                mAnswer = questionMath.getCorrectAnswer(questionNumber);
+                questionNumber++;
+                break;
+
+            case 201:
+                mQuestions.setText(questionsMathHighSchool.getQuestions(questionNumber));
+                getChoiceA.setText(questionsMathHighSchool.getChoice1(questionNumber));
+                getChoiceB.setText(questionsMathHighSchool.getChoice2(questionNumber));
+                getChoiceC.setText(questionsMathHighSchool.getChoice3(questionNumber));
+                getChoiceD.setText(questionsMathHighSchool.getChoice4(questionNumber));
+                mAnswer = questionsMathHighSchool.getCorrectAnswer(questionNumber);
+                questionNumber++;
+                break;
+
+            case 202:
+                mQuestions.setText(questionsMathCollege.getQuestions(questionNumber));
+                getChoiceA.setText(questionsMathCollege.getChoice1(questionNumber));
+                getChoiceB.setText(questionsMathCollege.getChoice2(questionNumber));
+                getChoiceC.setText(questionsMathCollege.getChoice3(questionNumber));
+                getChoiceD.setText(questionsMathCollege.getChoice4(questionNumber));
+                mAnswer = questionsMathCollege.getCorrectAnswer(questionNumber);
+                questionNumber++;
+                break;
+
+
+            case 300:
+                mQuestions.setText(questionHistory.getQuestions(questionNumber));
+                getChoiceA.setText(questionHistory.getChoice1(questionNumber));
+                getChoiceB.setText(questionHistory.getChoice2(questionNumber));
+                getChoiceC.setText(questionHistory.getChoice3(questionNumber));
+                getChoiceD.setText(questionHistory.getChoice4(questionNumber));
+                mAnswer = questionHistory.getCorrectAnswer(questionNumber);
+                questionNumber++;
+                break;
+
+            case 301:
+                mQuestions.setText(questionsHistoryHighSchool.getQuestions(questionNumber));
+                getChoiceA.setText(questionsHistoryHighSchool.getChoice1(questionNumber));
+                getChoiceB.setText(questionsHistoryHighSchool.getChoice2(questionNumber));
+                getChoiceC.setText(questionsHistoryHighSchool.getChoice3(questionNumber));
+                getChoiceD.setText(questionsHistoryHighSchool.getChoice4(questionNumber));
+                mAnswer = questionsHistoryHighSchool.getCorrectAnswer(questionNumber);
+                questionNumber++;
+                break;
+
+            case 302:
+                mQuestions.setText(questionsHistoryCollege.getQuestions(questionNumber));
+                getChoiceA.setText(questionsHistoryCollege.getChoice1(questionNumber));
+                getChoiceB.setText(questionsHistoryCollege.getChoice2(questionNumber));
+                getChoiceC.setText(questionsHistoryCollege.getChoice3(questionNumber));
+                getChoiceD.setText(questionsHistoryCollege.getChoice4(questionNumber));
+                mAnswer = questionsHistoryCollege.getCorrectAnswer(questionNumber);
+                questionNumber++;
+                break;
+        }
     }
 
-    private void updateQuestionMath() {
-        mQuestions.setText(questionMath.getQuestions(questionNumber));
-        getChoiceA.setText(questionMath.getChoice1(questionNumber));
-        getChoiceB.setText(questionMath.getChoice2(questionNumber));
-        getChoiceC.setText(questionMath.getChoice3(questionNumber));
-        getChoiceD.setText(questionMath.getChoice4(questionNumber));
-        mAnswer = questionMath.getCorrectAnswer(questionNumber);
-        questionNumber++;
-    }
-
-    private void updateQuestionHistory() {
-        mQuestions.setText(questionHistory.getQuestions(questionNumber));
-        getChoiceA.setText(questionHistory.getChoice1(questionNumber));
-        getChoiceB.setText(questionHistory.getChoice2(questionNumber));
-        getChoiceC.setText(questionHistory.getChoice3(questionNumber));
-        getChoiceD.setText(questionHistory.getChoice4(questionNumber));
-        mAnswer = questionHistory.getCorrectAnswer(questionNumber);
-        questionNumber++;
-    }
 }
+
