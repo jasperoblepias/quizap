@@ -227,8 +227,8 @@
     </ScrollView>
 
     <TextView
-        android:id="@+id/subjectName"
-        android:layout_width="85dp"
+        android:id="@+id/subjectName2"
+        android:layout_width="95dp"
         android:layout_height="40dp"
         android:layout_marginStart="100dp"
         android:layout_marginTop="204dp"
@@ -262,6 +262,19 @@
         android:layout_marginEnd="8dp"
         android:background="@drawable/questionmark"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/scoreNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="204dp"
+        android:fontFamily="@font/sansserif_demibold"
+        android:text="@string/score0"
+        android:textColor="#FEFCFC"
+        android:textSize="36sp"
+        app:layout_constraintStart_toEndOf="@+id/subjectName2"
         app:layout_constraintTop_toTopOf="parent" />
 
 

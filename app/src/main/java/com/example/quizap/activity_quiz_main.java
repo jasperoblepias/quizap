@@ -24,7 +24,6 @@ public class activity_quiz_main extends AppCompatActivity {
 
 
 
-
     private TextView mQuestions;
     private TextView mScoreView;
     private TextView questionNumberText;
@@ -37,7 +36,17 @@ public class activity_quiz_main extends AppCompatActivity {
     private int mScore = 0;
     private int questionNumberTextInt = 0;
 
+    int LiteratureGradeSchool = 100;
+    int LiteratureHighSchool = 101;
+    int LiteratureCollege = 102;
 
+    int MathGradeSchool = 200;
+    int MathHighSchool = 201;
+    int MathCollege = 202;
+
+    int HistoryGradeSchool = 300;
+    int HistoryHighSchool = 301;
+    int HistoryCollege = 302;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -118,6 +127,7 @@ public class activity_quiz_main extends AppCompatActivity {
                         Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
                         Bundle bundle = new Bundle();
                         bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",LiteratureGradeSchool);
                         intent.putExtras(bundle);
                         activity_quiz_main.this.finish();
                         startActivity(intent);
@@ -126,6 +136,7 @@ public class activity_quiz_main extends AppCompatActivity {
                         Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
                         Bundle bundle = new Bundle();
                         bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",LiteratureGradeSchool);
                         intent.putExtras(bundle);
                         activity_quiz_main.this.finish();
                         startActivity(intent);
@@ -159,6 +170,7 @@ public class activity_quiz_main extends AppCompatActivity {
                         Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
                         Bundle bundle = new Bundle();
                         bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",LiteratureGradeSchool);
                         intent.putExtras(bundle);
                         activity_quiz_main.this.finish();
                         startActivity(intent);
@@ -167,6 +179,7 @@ public class activity_quiz_main extends AppCompatActivity {
                         Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
                         Bundle bundle = new Bundle();
                         bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",LiteratureGradeSchool);
                         intent.putExtras(bundle);
                         activity_quiz_main.this.finish();
                         startActivity(intent);
@@ -200,6 +213,7 @@ public class activity_quiz_main extends AppCompatActivity {
                         Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
                         Bundle bundle = new Bundle();
                         bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",LiteratureGradeSchool);
                         intent.putExtras(bundle);
                         activity_quiz_main.this.finish();
                         startActivity(intent);
@@ -208,6 +222,7 @@ public class activity_quiz_main extends AppCompatActivity {
                         Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
                         Bundle bundle = new Bundle();
                         bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",LiteratureGradeSchool);
                         intent.putExtras(bundle);
                         activity_quiz_main.this.finish();
                         startActivity(intent);
@@ -239,6 +254,7 @@ public class activity_quiz_main extends AppCompatActivity {
                         Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
                         Bundle bundle = new Bundle();
                         bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",LiteratureGradeSchool);
                         intent.putExtras(bundle);
                         activity_quiz_main.this.finish();
                         startActivity(intent);
@@ -247,6 +263,7 @@ public class activity_quiz_main extends AppCompatActivity {
                         Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
                         Bundle bundle = new Bundle();
                         bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",LiteratureGradeSchool);
                         intent.putExtras(bundle);
                         activity_quiz_main.this.finish();
                         startActivity(intent);
@@ -289,6 +306,7 @@ public class activity_quiz_main extends AppCompatActivity {
                         Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
                         Bundle bundle = new Bundle();
                         bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",LiteratureHighSchool);
                         intent.putExtras(bundle);
                         activity_quiz_main.this.finish();
                         startActivity(intent);
@@ -297,6 +315,7 @@ public class activity_quiz_main extends AppCompatActivity {
                         Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
                         Bundle bundle = new Bundle();
                         bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",LiteratureHighSchool);
                         intent.putExtras(bundle);
                         activity_quiz_main.this.finish();
                         startActivity(intent);
@@ -330,6 +349,7 @@ public class activity_quiz_main extends AppCompatActivity {
                         Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
                         Bundle bundle = new Bundle();
                         bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",LiteratureHighSchool);
                         intent.putExtras(bundle);
                         activity_quiz_main.this.finish();
                         startActivity(intent);
@@ -338,6 +358,7 @@ public class activity_quiz_main extends AppCompatActivity {
                         Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
                         Bundle bundle = new Bundle();
                         bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",LiteratureHighSchool);
                         intent.putExtras(bundle);
                         activity_quiz_main.this.finish();
                         startActivity(intent);
@@ -371,6 +392,7 @@ public class activity_quiz_main extends AppCompatActivity {
                         Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
                         Bundle bundle = new Bundle();
                         bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",LiteratureHighSchool);
                         intent.putExtras(bundle);
                         activity_quiz_main.this.finish();
                         startActivity(intent);
@@ -379,6 +401,7 @@ public class activity_quiz_main extends AppCompatActivity {
                         Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
                         Bundle bundle = new Bundle();
                         bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",LiteratureHighSchool);
                         intent.putExtras(bundle);
                         activity_quiz_main.this.finish();
                         startActivity(intent);
@@ -410,6 +433,7 @@ public class activity_quiz_main extends AppCompatActivity {
                         Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
                         Bundle bundle = new Bundle();
                         bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",LiteratureHighSchool);
                         intent.putExtras(bundle);
                         activity_quiz_main.this.finish();
                         startActivity(intent);
@@ -418,6 +442,7 @@ public class activity_quiz_main extends AppCompatActivity {
                         Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
                         Bundle bundle = new Bundle();
                         bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",LiteratureHighSchool);
                         intent.putExtras(bundle);
                         activity_quiz_main.this.finish();
                         startActivity(intent);
@@ -460,6 +485,7 @@ public class activity_quiz_main extends AppCompatActivity {
                         Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
                         Bundle bundle = new Bundle();
                         bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",LiteratureCollege);
                         intent.putExtras(bundle);
                         activity_quiz_main.this.finish();
                         startActivity(intent);
@@ -468,6 +494,7 @@ public class activity_quiz_main extends AppCompatActivity {
                         Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
                         Bundle bundle = new Bundle();
                         bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",LiteratureCollege);
                         intent.putExtras(bundle);
                         activity_quiz_main.this.finish();
                         startActivity(intent);
@@ -501,6 +528,7 @@ public class activity_quiz_main extends AppCompatActivity {
                         Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
                         Bundle bundle = new Bundle();
                         bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",LiteratureCollege);
                         intent.putExtras(bundle);
                         activity_quiz_main.this.finish();
                         startActivity(intent);
@@ -509,6 +537,7 @@ public class activity_quiz_main extends AppCompatActivity {
                         Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
                         Bundle bundle = new Bundle();
                         bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",LiteratureCollege);
                         intent.putExtras(bundle);
                         activity_quiz_main.this.finish();
                         startActivity(intent);
@@ -542,6 +571,7 @@ public class activity_quiz_main extends AppCompatActivity {
                         Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
                         Bundle bundle = new Bundle();
                         bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",LiteratureCollege);
                         intent.putExtras(bundle);
                         activity_quiz_main.this.finish();
                         startActivity(intent);
@@ -550,6 +580,7 @@ public class activity_quiz_main extends AppCompatActivity {
                         Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
                         Bundle bundle = new Bundle();
                         bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",LiteratureCollege);
                         intent.putExtras(bundle);
                         activity_quiz_main.this.finish();
                         startActivity(intent);
@@ -581,6 +612,7 @@ public class activity_quiz_main extends AppCompatActivity {
                         Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
                         Bundle bundle = new Bundle();
                         bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",LiteratureCollege);
                         intent.putExtras(bundle);
                         activity_quiz_main.this.finish();
                         startActivity(intent);
@@ -589,6 +621,7 @@ public class activity_quiz_main extends AppCompatActivity {
                         Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
                         Bundle bundle = new Bundle();
                         bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",LiteratureCollege);
                         intent.putExtras(bundle);
                         activity_quiz_main.this.finish();
                         startActivity(intent);
@@ -633,6 +666,7 @@ public class activity_quiz_main extends AppCompatActivity {
                         Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
                         Bundle bundle = new Bundle();
                         bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",MathGradeSchool);
                         intent.putExtras(bundle);
                         activity_quiz_main.this.finish();
                         startActivity(intent);
@@ -641,6 +675,7 @@ public class activity_quiz_main extends AppCompatActivity {
                         Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
                         Bundle bundle = new Bundle();
                         bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",MathGradeSchool);
                         intent.putExtras(bundle);
                         activity_quiz_main.this.finish();
                         startActivity(intent);
@@ -674,6 +709,7 @@ public class activity_quiz_main extends AppCompatActivity {
                         Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
                         Bundle bundle = new Bundle();
                         bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",MathGradeSchool);
                         intent.putExtras(bundle);
                         activity_quiz_main.this.finish();
                         startActivity(intent);
@@ -682,6 +718,7 @@ public class activity_quiz_main extends AppCompatActivity {
                         Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
                         Bundle bundle = new Bundle();
                         bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",MathGradeSchool);
                         intent.putExtras(bundle);
                         activity_quiz_main.this.finish();
                         startActivity(intent);
@@ -714,6 +751,7 @@ public class activity_quiz_main extends AppCompatActivity {
                         Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
                         Bundle bundle = new Bundle();
                         bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",MathGradeSchool);
                         intent.putExtras(bundle);
                         activity_quiz_main.this.finish();
                         startActivity(intent);
@@ -722,6 +760,7 @@ public class activity_quiz_main extends AppCompatActivity {
                         Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
                         Bundle bundle = new Bundle();
                         bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",MathGradeSchool);
                         intent.putExtras(bundle);
                         activity_quiz_main.this.finish();
                         startActivity(intent);
@@ -753,6 +792,7 @@ public class activity_quiz_main extends AppCompatActivity {
                         Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
                         Bundle bundle = new Bundle();
                         bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",MathGradeSchool);
                         intent.putExtras(bundle);
                         activity_quiz_main.this.finish();
                         startActivity(intent);
@@ -761,6 +801,7 @@ public class activity_quiz_main extends AppCompatActivity {
                         Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
                         Bundle bundle = new Bundle();
                         bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",MathGradeSchool);
                         intent.putExtras(bundle);
                         activity_quiz_main.this.finish();
                         startActivity(intent);
@@ -804,6 +845,7 @@ public class activity_quiz_main extends AppCompatActivity {
                         Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
                         Bundle bundle = new Bundle();
                         bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",MathHighSchool);
                         intent.putExtras(bundle);
                         activity_quiz_main.this.finish();
                         startActivity(intent);
@@ -812,6 +854,7 @@ public class activity_quiz_main extends AppCompatActivity {
                         Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
                         Bundle bundle = new Bundle();
                         bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",MathHighSchool);
                         intent.putExtras(bundle);
                         activity_quiz_main.this.finish();
                         startActivity(intent);
@@ -845,6 +888,7 @@ public class activity_quiz_main extends AppCompatActivity {
                         Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
                         Bundle bundle = new Bundle();
                         bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",MathHighSchool);
                         intent.putExtras(bundle);
                         activity_quiz_main.this.finish();
                         startActivity(intent);
@@ -853,6 +897,7 @@ public class activity_quiz_main extends AppCompatActivity {
                         Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
                         Bundle bundle = new Bundle();
                         bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",MathHighSchool);
                         intent.putExtras(bundle);
                         activity_quiz_main.this.finish();
                         startActivity(intent);
@@ -885,6 +930,7 @@ public class activity_quiz_main extends AppCompatActivity {
                         Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
                         Bundle bundle = new Bundle();
                         bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",MathHighSchool);
                         intent.putExtras(bundle);
                         activity_quiz_main.this.finish();
                         startActivity(intent);
@@ -893,6 +939,7 @@ public class activity_quiz_main extends AppCompatActivity {
                         Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
                         Bundle bundle = new Bundle();
                         bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",MathHighSchool);
                         intent.putExtras(bundle);
                         activity_quiz_main.this.finish();
                         startActivity(intent);
@@ -924,6 +971,7 @@ public class activity_quiz_main extends AppCompatActivity {
                         Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
                         Bundle bundle = new Bundle();
                         bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",MathHighSchool);
                         intent.putExtras(bundle);
                         activity_quiz_main.this.finish();
                         startActivity(intent);
@@ -932,6 +980,7 @@ public class activity_quiz_main extends AppCompatActivity {
                         Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
                         Bundle bundle = new Bundle();
                         bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",MathHighSchool);
                         intent.putExtras(bundle);
                         activity_quiz_main.this.finish();
                         startActivity(intent);
@@ -974,6 +1023,7 @@ public class activity_quiz_main extends AppCompatActivity {
                         Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
                         Bundle bundle = new Bundle();
                         bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",MathCollege);
                         intent.putExtras(bundle);
                         activity_quiz_main.this.finish();
                         startActivity(intent);
@@ -982,6 +1032,7 @@ public class activity_quiz_main extends AppCompatActivity {
                         Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
                         Bundle bundle = new Bundle();
                         bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",MathCollege);
                         intent.putExtras(bundle);
                         activity_quiz_main.this.finish();
                         startActivity(intent);
@@ -1015,6 +1066,7 @@ public class activity_quiz_main extends AppCompatActivity {
                         Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
                         Bundle bundle = new Bundle();
                         bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",MathCollege);
                         intent.putExtras(bundle);
                         activity_quiz_main.this.finish();
                         startActivity(intent);
@@ -1023,6 +1075,7 @@ public class activity_quiz_main extends AppCompatActivity {
                         Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
                         Bundle bundle = new Bundle();
                         bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",MathCollege);
                         intent.putExtras(bundle);
                         activity_quiz_main.this.finish();
                         startActivity(intent);
@@ -1055,6 +1108,7 @@ public class activity_quiz_main extends AppCompatActivity {
                         Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
                         Bundle bundle = new Bundle();
                         bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",MathCollege);
                         intent.putExtras(bundle);
                         activity_quiz_main.this.finish();
                         startActivity(intent);
@@ -1063,6 +1117,7 @@ public class activity_quiz_main extends AppCompatActivity {
                         Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
                         Bundle bundle = new Bundle();
                         bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",MathCollege);
                         intent.putExtras(bundle);
                         activity_quiz_main.this.finish();
                         startActivity(intent);
@@ -1094,6 +1149,7 @@ public class activity_quiz_main extends AppCompatActivity {
                         Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
                         Bundle bundle = new Bundle();
                         bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",MathCollege);
                         intent.putExtras(bundle);
                         activity_quiz_main.this.finish();
                         startActivity(intent);
@@ -1102,6 +1158,7 @@ public class activity_quiz_main extends AppCompatActivity {
                         Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
                         Bundle bundle = new Bundle();
                         bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",MathCollege);
                         intent.putExtras(bundle);
                         activity_quiz_main.this.finish();
                         startActivity(intent);
@@ -1143,6 +1200,17 @@ public class activity_quiz_main extends AppCompatActivity {
                         Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
                         Bundle bundle = new Bundle();
                         bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",HistoryGradeSchool);
+                        intent.putExtras(bundle);
+                        activity_quiz_main.this.finish();
+                        startActivity(intent);
+                    }
+
+                    else{
+                        Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",HistoryGradeSchool);
                         intent.putExtras(bundle);
                         activity_quiz_main.this.finish();
                         startActivity(intent);
@@ -1176,6 +1244,17 @@ public class activity_quiz_main extends AppCompatActivity {
                         Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
                         Bundle bundle = new Bundle();
                         bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",HistoryGradeSchool);
+                        intent.putExtras(bundle);
+                        activity_quiz_main.this.finish();
+                        startActivity(intent);
+                    }
+
+                    else{
+                        Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",HistoryGradeSchool);
                         intent.putExtras(bundle);
                         activity_quiz_main.this.finish();
                         startActivity(intent);
@@ -1208,6 +1287,17 @@ public class activity_quiz_main extends AppCompatActivity {
                         Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
                         Bundle bundle = new Bundle();
                         bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",HistoryGradeSchool);
+                        intent.putExtras(bundle);
+                        activity_quiz_main.this.finish();
+                        startActivity(intent);
+                    }
+
+                    else{
+                        Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",HistoryGradeSchool);
                         intent.putExtras(bundle);
                         activity_quiz_main.this.finish();
                         startActivity(intent);
@@ -1239,6 +1329,7 @@ public class activity_quiz_main extends AppCompatActivity {
                         Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
                         Bundle bundle = new Bundle();
                         bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",HistoryGradeSchool);
                         intent.putExtras(bundle);
                         activity_quiz_main.this.finish();
                         startActivity(intent);
@@ -1247,6 +1338,7 @@ public class activity_quiz_main extends AppCompatActivity {
                         Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
                         Bundle bundle = new Bundle();
                         bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",HistoryGradeSchool);
                         intent.putExtras(bundle);
                         activity_quiz_main.this.finish();
                         startActivity(intent);
@@ -1290,6 +1382,17 @@ public class activity_quiz_main extends AppCompatActivity {
                         Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
                         Bundle bundle = new Bundle();
                         bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",HistoryHighSchool);
+                        intent.putExtras(bundle);
+                        activity_quiz_main.this.finish();
+                        startActivity(intent);
+                    }
+
+                    else{
+                        Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",HistoryHighSchool);
                         intent.putExtras(bundle);
                         activity_quiz_main.this.finish();
                         startActivity(intent);
@@ -1323,6 +1426,16 @@ public class activity_quiz_main extends AppCompatActivity {
                         Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
                         Bundle bundle = new Bundle();
                         bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",HistoryHighSchool);
+                        intent.putExtras(bundle);
+                        activity_quiz_main.this.finish();
+                        startActivity(intent);
+                    }
+                    else{
+                        Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",HistoryHighSchool);
                         intent.putExtras(bundle);
                         activity_quiz_main.this.finish();
                         startActivity(intent);
@@ -1355,6 +1468,16 @@ public class activity_quiz_main extends AppCompatActivity {
                         Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
                         Bundle bundle = new Bundle();
                         bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",HistoryHighSchool);
+                        intent.putExtras(bundle);
+                        activity_quiz_main.this.finish();
+                        startActivity(intent);
+                    }
+                    else{
+                        Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",HistoryHighSchool);
                         intent.putExtras(bundle);
                         activity_quiz_main.this.finish();
                         startActivity(intent);
@@ -1386,6 +1509,7 @@ public class activity_quiz_main extends AppCompatActivity {
                         Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
                         Bundle bundle = new Bundle();
                         bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",HistoryHighSchool);
                         intent.putExtras(bundle);
                         activity_quiz_main.this.finish();
                         startActivity(intent);
@@ -1394,6 +1518,7 @@ public class activity_quiz_main extends AppCompatActivity {
                         Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
                         Bundle bundle = new Bundle();
                         bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",HistoryHighSchool);
                         intent.putExtras(bundle);
                         activity_quiz_main.this.finish();
                         startActivity(intent);
@@ -1437,6 +1562,16 @@ public class activity_quiz_main extends AppCompatActivity {
                         Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
                         Bundle bundle = new Bundle();
                         bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",HistoryCollege);
+                        intent.putExtras(bundle);
+                        activity_quiz_main.this.finish();
+                        startActivity(intent);
+                    }
+                    else{
+                        Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",HistoryCollege);
                         intent.putExtras(bundle);
                         activity_quiz_main.this.finish();
                         startActivity(intent);
@@ -1470,10 +1605,21 @@ public class activity_quiz_main extends AppCompatActivity {
                         Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
                         Bundle bundle = new Bundle();
                         bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",HistoryCollege);
                         intent.putExtras(bundle);
                         activity_quiz_main.this.finish();
                         startActivity(intent);
                     }
+                    else{
+                        Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",HistoryCollege);
+                        intent.putExtras(bundle);
+                        activity_quiz_main.this.finish();
+                        startActivity(intent);
+                    }
+
                 }
 
                 else if(getChoiceB.getText() == mAnswer){
@@ -1502,6 +1648,16 @@ public class activity_quiz_main extends AppCompatActivity {
                         Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
                         Bundle bundle = new Bundle();
                         bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",HistoryCollege);
+                        intent.putExtras(bundle);
+                        activity_quiz_main.this.finish();
+                        startActivity(intent);
+                    }
+                    else{
+                        Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",HistoryCollege);
                         intent.putExtras(bundle);
                         activity_quiz_main.this.finish();
                         startActivity(intent);
@@ -1533,6 +1689,7 @@ public class activity_quiz_main extends AppCompatActivity {
                         Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
                         Bundle bundle = new Bundle();
                         bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",HistoryCollege);
                         intent.putExtras(bundle);
                         activity_quiz_main.this.finish();
                         startActivity(intent);
@@ -1541,6 +1698,7 @@ public class activity_quiz_main extends AppCompatActivity {
                         Intent intent = new Intent(activity_quiz_main.this, quiz_results.class);
                         Bundle bundle = new Bundle();
                         bundle.putInt("finalScore",mScore);
+                        bundle.putInt("level",HistoryCollege);
                         intent.putExtras(bundle);
                         activity_quiz_main.this.finish();
                         startActivity(intent);
@@ -1567,6 +1725,7 @@ public class activity_quiz_main extends AppCompatActivity {
     private void updateScore(int point){
         mScoreView.setText(""+mScore);
     }
+
     private void updateQuestionNumber(int point){ questionNumberText.setText(" "+questionNumberTextInt); }
 
 //    private void updatequestionsLitGradeSchool() {

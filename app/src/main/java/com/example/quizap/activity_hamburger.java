@@ -25,5 +25,11 @@ public class activity_hamburger extends AppCompatActivity {
         int height = dm_hamburger.heightPixels;
 
         getWindow().setLayout((int)(width*.8),(int)(height*.6));
+
+        caseButtons();
+    }
+
+    public void caseButtons() {
+        
     }
 }
