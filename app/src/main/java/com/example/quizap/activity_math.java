@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class activity_math extends AppCompatActivity {
 
-    private int number = 200;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,14 +32,34 @@ public class activity_math extends AppCompatActivity {
         @Override
         public void onClick(View v) {
 
+            int gradeschool = 200;
+            int highschool = 201;
+            int college = 202;
+
             switch (v.getId()){
                 case R.id.gradeSchoolButton:
                     Intent intent = new Intent(activity_math.this, activity_quiz_main.class);
                     Bundle bundle = new Bundle();
-                    bundle.putInt("number",number);
+                    bundle.putInt("number",gradeschool);
                     intent.putExtras(bundle);
                     activity_math.this.finish();
                     startActivity(intent);
+                    break;
+                case R.id.highSchoolButton:
+                    Intent intent1 = new Intent(activity_math.this, activity_quiz_main.class);
+                    Bundle bundle1 = new Bundle();
+                    bundle1.putInt("number",highschool);
+                    intent1.putExtras(bundle1);
+                    activity_math.this.finish();
+                    startActivity(intent1);
+                    break;
+                case R.id.collegeButton:
+                    Intent intent2 = new Intent(activity_math.this, activity_quiz_main.class);
+                    Bundle bundle2 = new Bundle();
+                    bundle2.putInt("number",college);
+                    intent2.putExtras(bundle2);
+                    activity_math.this.finish();
+                    startActivity(intent2);
                     break;
             }
         }

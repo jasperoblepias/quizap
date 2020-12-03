@@ -63,13 +63,13 @@
 
             <Button
                 android:id="@+id/litButton"
-                android:layout_width="371dp"
-                android:layout_height="55dp"
+                android:layout_width="378dp"
+                android:layout_height="63dp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="10dp"
-                android:background="@drawable/literaturebtndes"
+                android:background="@drawable/litbutton"
                 android:fontFamily="@font/san_serif"
                 android:paddingStart="10dp"
                 android:paddingEnd="56dp"
@@ -86,13 +86,13 @@
 
             <Button
                 android:id="@+id/historyButton"
-                android:layout_width="371dp"
-                android:layout_height="55dp"
+                android:layout_width="378dp"
+                android:layout_height="63dp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="82dp"
-                android:background="@drawable/worldhisbtndes"
+                android:background="@drawable/worldhistorybutton"
                 android:fontFamily="@font/san_serif"
                 android:paddingStart="105dp"
                 android:paddingEnd="108dp"
@@ -109,13 +109,13 @@
 
             <Button
                 android:id="@+id/mathButton"
-                android:layout_width="371dp"
-                android:layout_height="55dp"
+                android:layout_width="378dp"
+                android:layout_height="63dp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="152dp"
-                android:background="@drawable/mathbtndes"
+                android:background="@drawable/mathbutton"
                 android:fontFamily="@font/san_serif"
                 android:paddingStart="110dp"
                 android:paddingEnd="200dp"
@@ -133,13 +133,13 @@
             <Button
 
                 android:id="@+id/geographyButton"
-                android:layout_width="371dp"
-                android:layout_height="55dp"
+                android:layout_width="378dp"
+                android:layout_height="63dp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="226dp"
-                android:background="@drawable/geobtndes"
+                android:background="@drawable/geographybutton"
                 android:fontFamily="@font/san_serif"
                 android:paddingStart="105dp"
                 android:paddingEnd="135dp"
@@ -156,13 +156,13 @@
 
             <Button
                 android:id="@+id/botanyButton"
-                android:layout_width="371dp"
-                android:layout_height="55dp"
+                android:layout_width="378dp"
+                android:layout_height="63dp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="298dp"
-                android:background="@drawable/botanybtndes"
+                android:background="@drawable/botanybutton"
                 android:fontFamily="@font/san_serif"
                 android:paddingStart="90dp"
                 android:paddingEnd="160dp"
@@ -179,13 +179,13 @@
 
             <Button
                 android:id="@+id/zoologyButton"
-                android:layout_width="371dp"
-                android:layout_height="55dp"
+                android:layout_width="378dp"
+                android:layout_height="63dp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="370dp"
-                android:background="@drawable/zoobtndes"
+                android:background="@drawable/zoology"
                 android:fontFamily="@font/san_serif"
                 android:paddingStart="105dp"
                 android:paddingEnd="165dp"
@@ -202,13 +202,13 @@
 
             <Button
                 android:id="@+id/programmingButton"
-                android:layout_width="371dp"
-                android:layout_height="55dp"
+                android:layout_width="378dp"
+                android:layout_height="63dp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="442dp"
-                android:background="@drawable/progbtndes"
+                android:background="@drawable/programmingbutton"
                 android:fontFamily="@font/san_serif"
                 android:paddingStart="105dp"
                 android:paddingEnd="100dp"
@@ -227,8 +227,8 @@
     </ScrollView>
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="85dp"
+        android:id="@+id/subjectName2"
+        android:layout_width="95dp"
         android:layout_height="40dp"
         android:layout_marginStart="100dp"
         android:layout_marginTop="204dp"
@@ -262,6 +262,19 @@
         android:layout_marginEnd="8dp"
         android:background="@drawable/questionmark"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/scoreNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="204dp"
+        android:fontFamily="@font/sansserif_demibold"
+        android:text="@string/score0"
+        android:textColor="#FEFCFC"
+        android:textSize="36sp"
+        app:layout_constraintStart_toEndOf="@+id/subjectName2"
         app:layout_constraintTop_toTopOf="parent" />
 
 

@@ -8,8 +8,8 @@
 
     <TextView
         android:id="@+id/question"
-        android:layout_width="294dp"
-        android:layout_height="83dp"
+        android:layout_width="295dp"
+        android:layout_height="129dp"
         android:layout_marginStart="56dp"
         android:layout_marginTop="192dp"
         android:fontFamily="@font/san_serif"
@@ -19,54 +19,54 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:textAllCaps="false"
         android:id="@+id/buttonChoiceA"
-        android:layout_width="369dp"
-        android:layout_height="65dp"
-        android:layout_marginStart="21dp"
-        android:layout_marginTop="303dp"
+        android:layout_width="376dp"
+        android:layout_height="74dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="344dp"
         android:background="@drawable/buttona"
         android:fontFamily="@font/san_serif"
         android:text="@string/buttonA"
+        android:textAllCaps="false"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:textAllCaps="false"
-        android:id="@+id/buttonChoiceB"
-        android:layout_width="369dp"
-        android:layout_height="65dp"
-        android:layout_marginStart="21dp"
-        android:layout_marginTop="387dp"
-        android:background="@drawable/buttonb"
-        android:fontFamily="@font/san_serif"
-        android:text="@string/buttonB"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:textAllCaps="false"
         android:id="@+id/buttonChoiceC"
-        android:layout_width="369dp"
-        android:layout_height="65dp"
-        android:layout_marginStart="21dp"
-        android:layout_marginTop="469dp"
+        android:layout_width="376dp"
+        android:layout_height="74dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="508dp"
         android:background="@drawable/buttonc"
         android:fontFamily="@font/san_serif"
         android:text="@string/buttonC"
+        android:textAllCaps="false"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:textAllCaps="false"
         android:id="@+id/buttonChoiceD"
-        android:layout_width="369dp"
-        android:layout_height="65dp"
-        android:layout_marginStart="21dp"
-        android:layout_marginTop="551dp"
+        android:layout_width="376dp"
+        android:layout_height="74dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="592dp"
         android:background="@drawable/buttond"
         android:fontFamily="@font/san_serif"
         android:text="@string/buttonD"
+        android:textAllCaps="false"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonChoiceB"
+        android:layout_width="376dp"
+        android:layout_height="74dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="428dp"
+        android:background="@drawable/buttonb"
+        android:fontFamily="@font/san_serif"
+        android:text="@string/buttonB"
+        android:textAllCaps="false"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -124,7 +124,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/subjectName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="116dp"
