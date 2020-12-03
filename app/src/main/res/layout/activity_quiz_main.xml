@@ -128,7 +128,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="116dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="28dp"
         android:fontFamily="@font/sansserif_demibold"
         android:gravity="center"
         android:text="@string/literature"

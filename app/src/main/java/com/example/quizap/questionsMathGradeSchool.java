@@ -6,7 +6,7 @@ public class questionsMathGradeSchool {
             "If 6 children share 145 sweets equally, how many sweets will remain?",
             "Round 312.92 to the nearest whole number.",
             "If you add 1,000 to 29,898, you obtain",
-            "There are 61 boxes of pencils in a store. There are 14 pencils in each box. How many pencils are in the store?",
+            "There are 61 boxes of pencils and there are 14 pencils in each box. How many pencils are there?",
             "Six tenths is the same as",
             "Three hundredths is the same as",
             "1/10 =",
