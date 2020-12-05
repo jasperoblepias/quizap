@@ -27,6 +27,7 @@ public class activity_quiz_main extends AppCompatActivity {
     private TextView mQuestions;
     private TextView mScoreView;
     private TextView questionNumberText;
+    private TextView subjectName;
     private Button getChoiceA;
     private Button getChoiceB;
     private Button getChoiceC;
@@ -66,6 +67,7 @@ public class activity_quiz_main extends AppCompatActivity {
         getChoiceC = (Button)findViewById(R.id.buttonChoiceC);
         getChoiceD = (Button)findViewById(R.id.buttonChoiceD);
         questionNumberText = (TextView)findViewById(R.id.numberQuestionText);
+        subjectName = (TextView)findViewById(R.id.subjectName);
 
 
         Bundle bundle = getIntent().getExtras();
@@ -75,32 +77,41 @@ public class activity_quiz_main extends AppCompatActivity {
         switch (level_code){
             //literature subject
             case 100:
+                subjectName.setText("Literature");
                 LiteratureGradeSchool();
                 break;
             case 101:
+                subjectName.setText("Literature");
                 LiteratureHighSchool();
                 break;
             case 102:
+                subjectName.setText("Literature");
                 LiteratureCollege();
                 break;
             //math subject
             case 200:
+                subjectName.setText("Math");
                 MathGradeSchool();
                 break;
             case 201:
+                subjectName.setText("Math");
                 MathHighSchool();
                 break;
             case 202:
+                subjectName.setText("Math");
                 MathCollege();
                 break;
             //history subject
             case 300:
+                subjectName.setText("World History");
                 HistoryGradeSchool();
                 break;
             case 301:
+                subjectName.setText("World History");
                 HistoryHighSchool();
                 break;
             case 302:
+                subjectName.setText("World History");
                 HistoryCollege();
                 break;
         }
@@ -119,6 +130,7 @@ public class activity_quiz_main extends AppCompatActivity {
         getChoiceA.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 if(questionNumber == questionsLitGradeSchool.mQuestions.length){
                     if(getChoiceA.getText() == mAnswer){
                         mScore = mScore+1;

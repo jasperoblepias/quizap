@@ -150,16 +150,16 @@ public class activity_results extends AppCompatActivity {
         question_9.setText(questionsLitGradeSchool.getQuestions(8));
         question_10.setText(questionsLitGradeSchool.getQuestions(9));
 
-        answer_1.setText(questionsLitGradeSchool.getQuestions(0));
-        answer_2.setText(questionsLitGradeSchool.getQuestions(1));
-        answer_3.setText(questionsLitGradeSchool.getQuestions(2));
-        answer_4.setText(questionsLitGradeSchool.getQuestions(3));
-        answer_5.setText(questionsLitGradeSchool.getQuestions(4));
-        answer_6.setText(questionsLitGradeSchool.getQuestions(5));
-        answer_7.setText(questionsLitGradeSchool.getQuestions(6));
-        answer_8.setText(questionsLitGradeSchool.getQuestions(7));
-        answer_9.setText(questionsLitGradeSchool.getQuestions(8));
-        answer_10.setText(questionsLitGradeSchool.getQuestions(9));
+        answer_1.setText(questionsLitGradeSchool.getCorrectAnswer(0));
+        answer_2.setText(questionsLitGradeSchool.getCorrectAnswer(1));
+        answer_3.setText(questionsLitGradeSchool.getCorrectAnswer(2));
+        answer_4.setText(questionsLitGradeSchool.getCorrectAnswer(3));
+        answer_5.setText(questionsLitGradeSchool.getCorrectAnswer(4));
+        answer_6.setText(questionsLitGradeSchool.getCorrectAnswer(5));
+        answer_7.setText(questionsLitGradeSchool.getCorrectAnswer(6));
+        answer_8.setText(questionsLitGradeSchool.getCorrectAnswer(7));
+        answer_9.setText(questionsLitGradeSchool.getCorrectAnswer(8));
+        answer_10.setText(questionsLitGradeSchool.getCorrectAnswer(9));
     }
 
     private void LiteratureHighSchool(){
@@ -174,16 +174,16 @@ public class activity_results extends AppCompatActivity {
         question_9.setText(questionsLitHighSchool.getQuestions(8));
         question_10.setText(questionsLitHighSchool.getQuestions(9));
 
-        answer_1.setText(questionsLitHighSchool.getQuestions(0));
-        answer_2.setText(questionsLitHighSchool.getQuestions(1));
-        answer_3.setText(questionsLitHighSchool.getQuestions(2));
-        answer_4.setText(questionsLitHighSchool.getQuestions(3));
-        answer_5.setText(questionsLitHighSchool.getQuestions(4));
-        answer_6.setText(questionsLitHighSchool.getQuestions(5));
-        answer_7.setText(questionsLitHighSchool.getQuestions(6));
-        answer_8.setText(questionsLitHighSchool.getQuestions(7));
-        answer_9.setText(questionsLitHighSchool.getQuestions(8));
-        answer_10.setText(questionsLitHighSchool.getQuestions(9));
+        answer_1.setText(questionsLitHighSchool.getCorrectAnswer(0));
+        answer_2.setText(questionsLitHighSchool.getCorrectAnswer(1));
+        answer_3.setText(questionsLitHighSchool.getCorrectAnswer(2));
+        answer_4.setText(questionsLitHighSchool.getCorrectAnswer(3));
+        answer_5.setText(questionsLitHighSchool.getCorrectAnswer(4));
+        answer_6.setText(questionsLitHighSchool.getCorrectAnswer(5));
+        answer_7.setText(questionsLitHighSchool.getCorrectAnswer(6));
+        answer_8.setText(questionsLitHighSchool.getCorrectAnswer(7));
+        answer_9.setText(questionsLitHighSchool.getCorrectAnswer(8));
+        answer_10.setText(questionsLitHighSchool.getCorrectAnswer(9));
     }
 
     private void LiteratureCollege(){
@@ -198,16 +198,16 @@ public class activity_results extends AppCompatActivity {
         question_9.setText(questionsLitCollege.getQuestions(8));
         question_10.setText(questionsLitCollege.getQuestions(9));
 
-        answer_1.setText(questionsLitCollege.getQuestions(0));
-        answer_2.setText(questionsLitCollege.getQuestions(1));
-        answer_3.setText(questionsLitCollege.getQuestions(2));
-        answer_4.setText(questionsLitCollege.getQuestions(3));
-        answer_5.setText(questionsLitCollege.getQuestions(4));
-        answer_6.setText(questionsLitCollege.getQuestions(5));
-        answer_7.setText(questionsLitCollege.getQuestions(6));
-        answer_8.setText(questionsLitCollege.getQuestions(7));
-        answer_9.setText(questionsLitCollege.getQuestions(8));
-        answer_10.setText(questionsLitCollege.getQuestions(9));
+        answer_1.setText(questionsLitCollege.getCorrectAnswer(0));
+        answer_2.setText(questionsLitCollege.getCorrectAnswer(1));
+        answer_3.setText(questionsLitCollege.getCorrectAnswer(2));
+        answer_4.setText(questionsLitCollege.getCorrectAnswer(3));
+        answer_5.setText(questionsLitCollege.getCorrectAnswer(4));
+        answer_6.setText(questionsLitCollege.getCorrectAnswer(5));
+        answer_7.setText(questionsLitCollege.getCorrectAnswer(6));
+        answer_8.setText(questionsLitCollege.getCorrectAnswer(7));
+        answer_9.setText(questionsLitCollege.getCorrectAnswer(8));
+        answer_10.setText(questionsLitCollege.getCorrectAnswer(9));
     }
 
     private void MathGradeSchool(){
@@ -222,16 +222,16 @@ public class activity_results extends AppCompatActivity {
         question_9.setText(questionMath.getQuestions(8));
         question_10.setText(questionMath.getQuestions(9));
 
-        answer_1.setText(questionMath.getQuestions(0));
-        answer_2.setText(questionMath.getQuestions(1));
-        answer_3.setText(questionMath.getQuestions(2));
-        answer_4.setText(questionMath.getQuestions(3));
-        answer_5.setText(questionMath.getQuestions(4));
-        answer_6.setText(questionMath.getQuestions(5));
-        answer_7.setText(questionMath.getQuestions(6));
-        answer_8.setText(questionMath.getQuestions(7));
-        answer_9.setText(questionMath.getQuestions(8));
-        answer_10.setText(questionMath.getQuestions(9));
+        answer_1.setText(questionMath.getCorrectAnswer(0));
+        answer_2.setText(questionMath.getCorrectAnswer(1));
+        answer_3.setText(questionMath.getCorrectAnswer(2));
+        answer_4.setText(questionMath.getCorrectAnswer(3));
+        answer_5.setText(questionMath.getCorrectAnswer(4));
+        answer_6.setText(questionMath.getCorrectAnswer(5));
+        answer_7.setText(questionMath.getCorrectAnswer(6));
+        answer_8.setText(questionMath.getCorrectAnswer(7));
+        answer_9.setText(questionMath.getCorrectAnswer(8));
+        answer_10.setText(questionMath.getCorrectAnswer(9));
     }
 
     private void MathHighSchool(){
@@ -246,16 +246,16 @@ public class activity_results extends AppCompatActivity {
         question_9.setText(questionsMathHighSchool.getQuestions(8));
         question_10.setText(questionsMathHighSchool.getQuestions(9));
 
-        answer_1.setText(questionsMathHighSchool.getQuestions(0));
-        answer_2.setText(questionsMathHighSchool.getQuestions(1));
-        answer_3.setText(questionsMathHighSchool.getQuestions(2));
-        answer_4.setText(questionsMathHighSchool.getQuestions(3));
-        answer_5.setText(questionsMathHighSchool.getQuestions(4));
-        answer_6.setText(questionsMathHighSchool.getQuestions(5));
-        answer_7.setText(questionsMathHighSchool.getQuestions(6));
-        answer_8.setText(questionsMathHighSchool.getQuestions(7));
-        answer_9.setText(questionsMathHighSchool.getQuestions(8));
-        answer_10.setText(questionsMathHighSchool.getQuestions(9));
+        answer_1.setText(questionsMathHighSchool.getCorrectAnswer(0));
+        answer_2.setText(questionsMathHighSchool.getCorrectAnswer(1));
+        answer_3.setText(questionsMathHighSchool.getCorrectAnswer(2));
+        answer_4.setText(questionsMathHighSchool.getCorrectAnswer(3));
+        answer_5.setText(questionsMathHighSchool.getCorrectAnswer(4));
+        answer_6.setText(questionsMathHighSchool.getCorrectAnswer(5));
+        answer_7.setText(questionsMathHighSchool.getCorrectAnswer(6));
+        answer_8.setText(questionsMathHighSchool.getCorrectAnswer(7));
+        answer_9.setText(questionsMathHighSchool.getCorrectAnswer(8));
+        answer_10.setText(questionsMathHighSchool.getCorrectAnswer(9));
     }
 
     private void MathCollege(){
@@ -270,16 +270,16 @@ public class activity_results extends AppCompatActivity {
         question_9.setText(questionsMathCollege.getQuestions(8));
         question_10.setText(questionsMathCollege.getQuestions(9));
 
-        answer_1.setText(questionsMathCollege.getQuestions(0));
-        answer_2.setText(questionsMathCollege.getQuestions(1));
-        answer_3.setText(questionsMathCollege.getQuestions(2));
-        answer_4.setText(questionsMathCollege.getQuestions(3));
-        answer_5.setText(questionsMathCollege.getQuestions(4));
-        answer_6.setText(questionsMathCollege.getQuestions(5));
-        answer_7.setText(questionsMathCollege.getQuestions(6));
-        answer_8.setText(questionsMathCollege.getQuestions(7));
-        answer_9.setText(questionsMathCollege.getQuestions(8));
-        answer_10.setText(questionsMathCollege.getQuestions(9));
+        answer_1.setText(questionsMathCollege.getCorrectAnswer(0));
+        answer_2.setText(questionsMathCollege.getCorrectAnswer(1));
+        answer_3.setText(questionsMathCollege.getCorrectAnswer(2));
+        answer_4.setText(questionsMathCollege.getCorrectAnswer(3));
+        answer_5.setText(questionsMathCollege.getCorrectAnswer(4));
+        answer_6.setText(questionsMathCollege.getCorrectAnswer(5));
+        answer_7.setText(questionsMathCollege.getCorrectAnswer(6));
+        answer_8.setText(questionsMathCollege.getCorrectAnswer(7));
+        answer_9.setText(questionsMathCollege.getCorrectAnswer(8));
+        answer_10.setText(questionsMathCollege.getCorrectAnswer(9));
     }
 
     private void HistoryGradeSchool(){
@@ -294,16 +294,16 @@ public class activity_results extends AppCompatActivity {
         question_9.setText(questionHistory.getQuestions(8));
         question_10.setText(questionHistory.getQuestions(9));
 
-        answer_1.setText(questionHistory.getQuestions(0));
-        answer_2.setText(questionHistory.getQuestions(1));
-        answer_3.setText(questionHistory.getQuestions(2));
-        answer_4.setText(questionHistory.getQuestions(3));
-        answer_5.setText(questionHistory.getQuestions(4));
-        answer_6.setText(questionHistory.getQuestions(5));
-        answer_7.setText(questionHistory.getQuestions(6));
-        answer_8.setText(questionHistory.getQuestions(7));
-        answer_9.setText(questionHistory.getQuestions(8));
-        answer_10.setText(questionHistory.getQuestions(9));
+        answer_1.setText(questionHistory.getCorrectAnswer(0));
+        answer_2.setText(questionHistory.getCorrectAnswer(1));
+        answer_3.setText(questionHistory.getCorrectAnswer(2));
+        answer_4.setText(questionHistory.getCorrectAnswer(3));
+        answer_5.setText(questionHistory.getCorrectAnswer(4));
+        answer_6.setText(questionHistory.getCorrectAnswer(5));
+        answer_7.setText(questionHistory.getCorrectAnswer(6));
+        answer_8.setText(questionHistory.getCorrectAnswer(7));
+        answer_9.setText(questionHistory.getCorrectAnswer(8));
+        answer_10.setText(questionHistory.getCorrectAnswer(9));
     }
 
     private void HistoryHighSchool(){
@@ -318,16 +318,16 @@ public class activity_results extends AppCompatActivity {
         question_9.setText(questionsHistoryHighSchool.getQuestions(8));
         question_10.setText(questionsHistoryHighSchool.getQuestions(9));
 
-        answer_1.setText(questionsHistoryHighSchool.getQuestions(0));
-        answer_2.setText(questionsHistoryHighSchool.getQuestions(1));
-        answer_3.setText(questionsHistoryHighSchool.getQuestions(2));
-        answer_4.setText(questionsHistoryHighSchool.getQuestions(3));
-        answer_5.setText(questionsHistoryHighSchool.getQuestions(4));
-        answer_6.setText(questionsHistoryHighSchool.getQuestions(5));
-        answer_7.setText(questionsHistoryHighSchool.getQuestions(6));
-        answer_8.setText(questionsHistoryHighSchool.getQuestions(7));
-        answer_9.setText(questionsHistoryHighSchool.getQuestions(8));
-        answer_10.setText(questionsHistoryHighSchool.getQuestions(9));
+        answer_1.setText(questionsHistoryHighSchool.getCorrectAnswer(0));
+        answer_2.setText(questionsHistoryHighSchool.getCorrectAnswer(1));
+        answer_3.setText(questionsHistoryHighSchool.getCorrectAnswer(2));
+        answer_4.setText(questionsHistoryHighSchool.getCorrectAnswer(3));
+        answer_5.setText(questionsHistoryHighSchool.getCorrectAnswer(4));
+        answer_6.setText(questionsHistoryHighSchool.getCorrectAnswer(5));
+        answer_7.setText(questionsHistoryHighSchool.getCorrectAnswer(6));
+        answer_8.setText(questionsHistoryHighSchool.getCorrectAnswer(7));
+        answer_9.setText(questionsHistoryHighSchool.getCorrectAnswer(8));
+        answer_10.setText(questionsHistoryHighSchool.getCorrectAnswer(9));
     }
 
     private void HistoryCollege(){
@@ -342,16 +342,16 @@ public class activity_results extends AppCompatActivity {
         question_9.setText(questionsHistoryCollege.getQuestions(8));
         question_10.setText(questionsHistoryCollege.getQuestions(9));
 
-        answer_1.setText(questionsHistoryCollege.getQuestions(0));
-        answer_2.setText(questionsHistoryCollege.getQuestions(1));
-        answer_3.setText(questionsHistoryCollege.getQuestions(2));
-        answer_4.setText(questionsHistoryCollege.getQuestions(3));
-        answer_5.setText(questionsHistoryCollege.getQuestions(4));
-        answer_6.setText(questionsHistoryCollege.getQuestions(5));
-        answer_7.setText(questionsHistoryCollege.getQuestions(6));
-        answer_8.setText(questionsHistoryCollege.getQuestions(7));
-        answer_9.setText(questionsHistoryCollege.getQuestions(8));
-        answer_10.setText(questionsHistoryCollege.getQuestions(9));
+        answer_1.setText(questionsHistoryCollege.getCorrectAnswer(0));
+        answer_2.setText(questionsHistoryCollege.getCorrectAnswer(1));
+        answer_3.setText(questionsHistoryCollege.getCorrectAnswer(2));
+        answer_4.setText(questionsHistoryCollege.getCorrectAnswer(3));
+        answer_5.setText(questionsHistoryCollege.getCorrectAnswer(4));
+        answer_6.setText(questionsHistoryCollege.getCorrectAnswer(5));
+        answer_7.setText(questionsHistoryCollege.getCorrectAnswer(6));
+        answer_8.setText(questionsHistoryCollege.getCorrectAnswer(7));
+        answer_9.setText(questionsHistoryCollege.getCorrectAnswer(8));
+        answer_10.setText(questionsHistoryCollege.getCorrectAnswer(9));
     }
     
 }

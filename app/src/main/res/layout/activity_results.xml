@@ -10,12 +10,13 @@
 
     <ScrollView
         android:id="@+id/scrollView3"
-        android:layout_width="match_parent"
-        android:layout_height="496dp"
-        android:layout_marginTop="200dp"
+        android:layout_width="405dp"
+        android:layout_height="454dp"
+        android:layout_marginTop="150dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        android:overScrollMode="never">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -26,354 +27,370 @@
                 android:id="@+id/question_text_1"
                 android:layout_width="match_parent"
                 android:layout_height="57dp"
+                android:layout_marginStart="10dp"
                 android:layout_marginTop="0dp"
+                android:layout_marginEnd="10dp"
                 android:fontFamily="@font/sansserif_demibold"
                 android:text="Question 1"
-                android:textSize="15sp"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"/>
+                android:textSize="15sp" />
 
             <TextView
                 android:id="@+id/question_1"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
+                android:layout_marginStart="10dp"
                 android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
                 android:fontFamily="@font/san_serif"
                 android:text="TextView"
-                android:textSize="20dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"/>
+                android:textSize="20dp" />
 
             <TextView
                 android:id="@+id/answer_1"
                 android:layout_width="match_parent"
                 android:layout_height="47dp"
-                android:layout_marginTop="120dp"
-                android:fontFamily="@font/san_serif"
-                android:text="Answer"
-                android:textSize="18dp"
                 android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"/>
+                android:layout_marginTop="120dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/sansserif_demibold"
+                android:text="Answer"
+                android:textSize="18dp" />
 
 
             <TextView
                 android:id="@+id/question_text_2"
                 android:layout_width="match_parent"
                 android:layout_height="57dp"
+                android:layout_marginStart="10dp"
                 android:layout_marginTop="200dp"
+                android:layout_marginEnd="10dp"
                 android:fontFamily="@font/sansserif_demibold"
                 android:text="Question 2"
-                android:textSize="15sp"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"/>
+                android:textSize="15sp" />
 
             <TextView
                 android:id="@+id/question_2"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
+                android:layout_marginStart="10dp"
                 android:layout_marginTop="220dp"
+                android:layout_marginEnd="10dp"
                 android:fontFamily="@font/san_serif"
                 android:text="TextView"
-                android:textSize="20sp"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"/>
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/answer_2"
                 android:layout_width="match_parent"
                 android:layout_height="47dp"
-                android:layout_marginTop="320dp"
-                android:fontFamily="@font/san_serif"
-                android:text="Answer"
-                android:textSize="18dp"
                 android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"/>
+                android:layout_marginTop="320dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/sansserif_demibold"
+                android:text="Answer"
+                android:textSize="18dp" />
 
             <TextView
                 android:id="@+id/question_text_3"
                 android:layout_width="match_parent"
                 android:layout_height="57dp"
+                android:layout_marginStart="10dp"
                 android:layout_marginTop="400dp"
+                android:layout_marginEnd="10dp"
                 android:fontFamily="@font/sansserif_demibold"
                 android:text="Question 3"
-                android:textSize="15sp"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"/>
+                android:textSize="15sp" />
 
             <TextView
                 android:id="@+id/question_3"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
+                android:layout_marginStart="10dp"
                 android:layout_marginTop="420dp"
+                android:layout_marginEnd="10dp"
                 android:fontFamily="@font/san_serif"
                 android:text="TextView"
-                android:textSize="20sp"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"/>
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/answer_3"
                 android:layout_width="match_parent"
                 android:layout_height="47dp"
-                android:layout_marginTop="520dp"
-                android:fontFamily="@font/san_serif"
-                android:text="Answer"
-                android:textSize="18dp"
                 android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"/>
+                android:layout_marginTop="520dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/sansserif_demibold"
+                android:text="Answer"
+                android:textSize="18dp" />
 
             <TextView
                 android:id="@+id/question_text_4"
                 android:layout_width="match_parent"
                 android:layout_height="57dp"
+                android:layout_marginStart="10dp"
                 android:layout_marginTop="600dp"
+                android:layout_marginEnd="10dp"
                 android:fontFamily="@font/sansserif_demibold"
                 android:text="Question 4"
-                android:textSize="15sp"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"/>
+                android:textSize="15sp" />
 
             <TextView
                 android:id="@+id/question_4"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
+                android:layout_marginStart="10dp"
                 android:layout_marginTop="620dp"
+                android:layout_marginEnd="10dp"
                 android:fontFamily="@font/san_serif"
                 android:text="TextView"
-                android:textSize="20sp"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"/>
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/answer_4"
                 android:layout_width="match_parent"
                 android:layout_height="47dp"
-                android:layout_marginTop="720dp"
-                android:fontFamily="@font/san_serif"
-                android:text="Answer"
-                android:textSize="18dp"
                 android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"/>
+                android:layout_marginTop="720dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/sansserif_demibold"
+                android:text="Answer"
+                android:textSize="18dp" />
 
             <TextView
                 android:id="@+id/question_text_5"
                 android:layout_width="match_parent"
                 android:layout_height="57dp"
+                android:layout_marginStart="10dp"
                 android:layout_marginTop="800dp"
+                android:layout_marginEnd="10dp"
                 android:fontFamily="@font/sansserif_demibold"
                 android:text="Question 5"
-                android:textSize="15sp"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"/>
+                android:textSize="15sp" />
 
             <TextView
                 android:id="@+id/question_5"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
+                android:layout_marginStart="10dp"
                 android:layout_marginTop="820dp"
+                android:layout_marginEnd="10dp"
                 android:fontFamily="@font/san_serif"
                 android:text="TextView"
-                android:textSize="20sp"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"/>
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/answer_5"
                 android:layout_width="match_parent"
                 android:layout_height="47dp"
-                android:layout_marginTop="920dp"
-                android:fontFamily="@font/san_serif"
-                android:text="Answer"
-                android:textSize="18dp"
                 android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"/>
+                android:layout_marginTop="920dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/sansserif_demibold"
+                android:text="Answer"
+                android:textSize="18dp" />
 
             <TextView
                 android:id="@+id/question_text_6"
                 android:layout_width="match_parent"
                 android:layout_height="57dp"
+                android:layout_marginStart="10dp"
                 android:layout_marginTop="1000dp"
+                android:layout_marginEnd="10dp"
                 android:fontFamily="@font/sansserif_demibold"
                 android:text="Question 6"
-                android:textSize="15sp"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"/>
+                android:textSize="15sp" />
 
             <TextView
                 android:id="@+id/question_6"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
+                android:layout_marginStart="10dp"
                 android:layout_marginTop="1020dp"
+                android:layout_marginEnd="10dp"
                 android:fontFamily="@font/san_serif"
                 android:text="TextView"
-                android:textSize="20sp"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"/>
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/answer_6"
                 android:layout_width="match_parent"
                 android:layout_height="47dp"
-                android:layout_marginTop="1120dp"
-                android:fontFamily="@font/san_serif"
-                android:text="Answer"
-                android:textSize="18dp"
                 android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"/>
+                android:layout_marginTop="1120dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/sansserif_demibold"
+                android:text="Answer"
+                android:textSize="18dp" />
 
             <TextView
                 android:id="@+id/question_text_7"
                 android:layout_width="match_parent"
                 android:layout_height="57dp"
+                android:layout_marginStart="10dp"
                 android:layout_marginTop="1200dp"
+                android:layout_marginEnd="10dp"
                 android:fontFamily="@font/sansserif_demibold"
                 android:text="Question 7"
-                android:textSize="15sp"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"/>
+                android:textSize="15sp" />
 
             <TextView
                 android:id="@+id/question_7"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
+                android:layout_marginStart="10dp"
                 android:layout_marginTop="1220dp"
+                android:layout_marginEnd="10dp"
                 android:fontFamily="@font/san_serif"
                 android:text="TextView"
-                android:textSize="20sp"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"/>
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/answer_7"
                 android:layout_width="match_parent"
                 android:layout_height="47dp"
-                android:layout_marginTop="1320dp"
-                android:fontFamily="@font/san_serif"
-                android:text="Answer"
-                android:textSize="18dp"
                 android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"/>
+                android:layout_marginTop="1320dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/sansserif_demibold"
+                android:text="Answer"
+                android:textSize="18dp" />
 
             <TextView
                 android:id="@+id/question_text_8"
                 android:layout_width="match_parent"
                 android:layout_height="57dp"
+                android:layout_marginStart="10dp"
                 android:layout_marginTop="1400dp"
+                android:layout_marginEnd="10dp"
                 android:fontFamily="@font/sansserif_demibold"
                 android:text="Question 8"
-                android:textSize="15sp"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"/>
+                android:textSize="15sp" />
 
             <TextView
                 android:id="@+id/question_8"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
+                android:layout_marginStart="10dp"
                 android:layout_marginTop="1420dp"
+                android:layout_marginEnd="10dp"
                 android:fontFamily="@font/san_serif"
                 android:text="TextView"
-                android:textSize="20sp"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"/>
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/answer_8"
                 android:layout_width="match_parent"
                 android:layout_height="47dp"
-                android:layout_marginTop="1520dp"
-                android:fontFamily="@font/san_serif"
-                android:text="Answer"
-                android:textSize="18dp"
                 android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"/>
+                android:layout_marginTop="1520dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/sansserif_demibold"
+                android:text="Answer"
+                android:textSize="18dp" />
 
             <TextView
                 android:id="@+id/question_text_9"
                 android:layout_width="match_parent"
                 android:layout_height="57dp"
+                android:layout_marginStart="10dp"
                 android:layout_marginTop="1600dp"
+                android:layout_marginEnd="10dp"
                 android:fontFamily="@font/sansserif_demibold"
                 android:text="Question 9"
-                android:textSize="15sp"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"/>
+                android:textSize="15sp" />
 
             <TextView
                 android:id="@+id/question_9"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
+                android:layout_marginStart="10dp"
                 android:layout_marginTop="1620dp"
+                android:layout_marginEnd="10dp"
                 android:fontFamily="@font/san_serif"
                 android:text="TextView"
-                android:textSize="20sp"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"/>
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/answer_9"
                 android:layout_width="match_parent"
                 android:layout_height="47dp"
-                android:layout_marginTop="1720dp"
-                android:fontFamily="@font/san_serif"
-                android:text="Answer"
-                android:textSize="18dp"
                 android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"/>
+                android:layout_marginTop="1720dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/sansserif_demibold"
+                android:text="Answer"
+                android:textSize="18dp" />
 
             <TextView
                 android:id="@+id/question_text_10"
                 android:layout_width="match_parent"
                 android:layout_height="57dp"
+                android:layout_marginStart="10dp"
                 android:layout_marginTop="1800dp"
+                android:layout_marginEnd="10dp"
                 android:fontFamily="@font/sansserif_demibold"
                 android:text="Question 10"
-                android:textSize="15sp"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"/>
+                android:textSize="15sp" />
 
             <TextView
                 android:id="@+id/question_10"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
+                android:layout_marginStart="10dp"
                 android:layout_marginTop="1820dp"
+                android:layout_marginEnd="10dp"
                 android:fontFamily="@font/san_serif"
                 android:text="TextView"
-                android:textSize="20sp"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"/>
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/answer_10"
                 android:layout_width="match_parent"
                 android:layout_height="47dp"
-                android:layout_marginTop="1920dp"
-                android:fontFamily="@font/san_serif"
-                android:text="Answer"
-                android:textSize="18dp"
                 android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"/>
+                android:layout_marginTop="1920dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/sansserif_demibold"
+                android:text="Answer"
+                android:textSize="18dp" />
+
+
 
         </RelativeLayout>
     </ScrollView>
 
     <Button
         android:id="@+id/ctn_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="161dp"
-        android:layout_marginTop="10dp"
+        android:layout_width="114dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="650dp"
+        android:background="@drawable/ok_button"
         android:text="Continue"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scrollView3" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="411dp"
+        android:layout_height="137dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/toporange" />
 
     <TextView
-        android:id="@+id/textView99"
+        android:id="@+id/subjectName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="182dp"
-        android:layout_marginTop="88dp"
-        android:text="Results"
+        android:layout_gravity="center"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/sansserif_demibold"
+        android:text="Answers"
+        android:textColor="#ffffff"
+        android:textSize="50sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
