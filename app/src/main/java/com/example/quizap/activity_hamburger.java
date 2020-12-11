@@ -35,6 +35,7 @@ public class activity_hamburger extends AppCompatActivity {
         findViewById(R.id.create_account_btn).setOnClickListener(buttonClickListener);
         findViewById(R.id.leaderboard_btn).setOnClickListener(buttonClickListener);
         findViewById(R.id.help_btn).setOnClickListener(buttonClickListener);
+        findViewById(R.id.back_btn).setOnClickListener(buttonClickListener);
 
     }
 
@@ -65,6 +66,12 @@ public class activity_hamburger extends AppCompatActivity {
                     Intent intent3 = new Intent(activity_hamburger.this, help_button.class);
                     activity_hamburger.this.finish();
                     startActivity(intent3);
+                    break;
+
+                case R.id.back_btn:
+                    Intent intent4 = new Intent(activity_hamburger.this, MainActivity.class);
+                    activity_hamburger.this.finish();
+                    startActivity(intent4);
                     break;
             }
         }
