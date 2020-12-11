@@ -56,10 +56,11 @@ public class MainActivity extends AppCompatActivity {
 
             TextView score_a = (TextView) findViewById(R.id.user_score_txt);
 
-            int score = Integer.valueOf(score_a.getText().toString());
+
 
             switch (view.getId()){
                 case R.id.litButton:
+                    int score = Integer.valueOf(score_a.getText().toString());
                     Intent intent_lit = new Intent(MainActivity.this, activity_literature.class);
                     Bundle bundle_lit = new Bundle();
                     bundle_lit.putInt("score", score);
@@ -67,16 +68,18 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(intent_lit);
                     break;
                 case R.id.historyButton:
+                    int score1 = Integer.valueOf(score_a.getText().toString());
                     Intent intent_his = new Intent(MainActivity.this, activity_worldhistory.class);
                     Bundle bundle_his = new Bundle();
-                    bundle_his.putInt("score", score);
+                    bundle_his.putInt("score", score1);
                     intent_his.putExtras(bundle_his);
                     startActivity(intent_his);
                     break;
                 case R.id.mathButton:
+                    int score2 = Integer.valueOf(score_a.getText().toString());
                     Intent intent_math = new Intent(MainActivity.this, activity_math.class);
                     Bundle bundle_math = new Bundle();
-                    bundle_math.putInt("score", score);
+                    bundle_math.putInt("score", score2);
                     intent_math.putExtras(bundle_math);
                     startActivity(intent_math);
                     break;
