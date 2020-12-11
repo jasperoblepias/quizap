@@ -9,7 +9,11 @@ import android.widget.TextView;
 
 public class quiz_results extends AppCompatActivity {
 
-    TextView fScore, textResult;
+    private int c;
+    TextView fScore, textResult, final_score;
+    private int db_score;
+    private int last_score;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,18 +26,20 @@ public class quiz_results extends AppCompatActivity {
 
         fScore = (TextView) findViewById(R.id.scoreResult);
         textResult = (TextView) findViewById(R.id.textResult);
+        final_score = (TextView) findViewById((R.id.finalscore));
 
         Bundle bundle = getIntent().getExtras();
         int score = bundle.getInt("finalScore");
+        db_score = bundle.getInt("score");
         double d_score = score;
         double score_percent = (d_score/10)*(100);
         int finalScore = (int)Math.round(score_percent);
-
+        last_score = score;
 
         if(finalScore <= 50){
             fScore.setText(finalScore+"% Score");
         }
-
+        final_score.setText(d_score+"");
         fScore.setText(finalScore+"% Score");
         textResult.setText("You attempt 10 questions and \nfrom that "+score+" answer is correct.");
 
@@ -57,8 +63,21 @@ public class quiz_results extends AppCompatActivity {
             int HistoryHighSchool = 301;
             int HistoryCollege = 302;
 
+            String id, user_score;
+
+            MyDatabaseHelper myDB = new MyDatabaseHelper(quiz_results.this);
+            int a = db_score;
+            int b = last_score;
+            c = a + b;
+
             switch (v.getId()){
                 case R.id.continueBtn:
+
+
+                    user_score = Integer.toString(c);
+                    id = "1";
+                    myDB.updateData(id, user_score);
+
                     Intent intent = new Intent(quiz_results.this, MainActivity.class);
                     quiz_results.this.finish();
                     startActivity(intent);
@@ -73,8 +92,12 @@ public class quiz_results extends AppCompatActivity {
                         case 100:
                             Intent LiteratureGradeSchool_check = new Intent(quiz_results.this, activity_results.class);
                             Bundle LiteratureGradeSchool_bundle = new Bundle();
+
+                            LiteratureGradeSchool_bundle.putInt("score",c);
+                            LiteratureGradeSchool_check.putExtras(LiteratureGradeSchool_bundle);
                             LiteratureGradeSchool_bundle.putInt("result", LiteratureGradeSchool);
                             LiteratureGradeSchool_check.putExtras(LiteratureGradeSchool_bundle);
+
                             quiz_results.this.finish();
                             startActivity(LiteratureGradeSchool_check);
                             break;
@@ -82,6 +105,8 @@ public class quiz_results extends AppCompatActivity {
                         case 101:
                             Intent LiteratureHighSchool_check = new Intent(quiz_results.this, activity_results.class);
                             Bundle LiteratureHighSchool_bundle = new Bundle();
+                            LiteratureHighSchool_bundle.putInt("score",c);
+                            LiteratureHighSchool_check.putExtras(LiteratureHighSchool_bundle);
                             LiteratureHighSchool_bundle.putInt("result", LiteratureHighSchool);
                             LiteratureHighSchool_check.putExtras(LiteratureHighSchool_bundle);
                             quiz_results.this.finish();
@@ -91,6 +116,8 @@ public class quiz_results extends AppCompatActivity {
                         case 102:
                             Intent LiteratureCollege_check = new Intent(quiz_results.this, activity_results.class);
                             Bundle LiteratureCollege_bundle = new Bundle();
+                            LiteratureCollege_bundle.putInt("score",c);
+                            LiteratureCollege_check.putExtras(LiteratureCollege_bundle);
                             LiteratureCollege_bundle.putInt("result", LiteratureCollege);
                             LiteratureCollege_check.putExtras(LiteratureCollege_bundle);
                             quiz_results.this.finish();
@@ -99,6 +126,8 @@ public class quiz_results extends AppCompatActivity {
                         case 200:
                             Intent MathGradeSchool_check = new Intent(quiz_results.this, activity_results.class);
                             Bundle MathGradeSchool_bundle = new Bundle();
+                            MathGradeSchool_bundle.putInt("score",c);
+                            MathGradeSchool_check.putExtras(MathGradeSchool_bundle);
                             MathGradeSchool_bundle.putInt("result", MathGradeSchool);
                             MathGradeSchool_check.putExtras(MathGradeSchool_bundle);
                             quiz_results.this.finish();
@@ -107,6 +136,8 @@ public class quiz_results extends AppCompatActivity {
                         case 201:
                             Intent MathHighSchool_check = new Intent(quiz_results.this, activity_results.class);
                             Bundle MathHighSchool_bundle = new Bundle();
+                            MathHighSchool_bundle.putInt("score",c);
+                            MathHighSchool_check.putExtras(MathHighSchool_bundle);
                             MathHighSchool_bundle.putInt("result", MathHighSchool);
                             MathHighSchool_check.putExtras(MathHighSchool_bundle);
                             quiz_results.this.finish();
@@ -116,6 +147,8 @@ public class quiz_results extends AppCompatActivity {
                         case 202:
                             Intent MathCollege_check = new Intent(quiz_results.this, activity_results.class);
                             Bundle MathCollege_bundle = new Bundle();
+                            MathCollege_bundle.putInt("score",c);
+                            MathCollege_check.putExtras(MathCollege_bundle);
                             MathCollege_bundle.putInt("result", MathCollege);
                             MathCollege_check.putExtras(MathCollege_bundle);
                             quiz_results.this.finish();
@@ -125,6 +158,8 @@ public class quiz_results extends AppCompatActivity {
                         case 300:
                             Intent HistoryGradeSchool_check = new Intent(quiz_results.this, activity_results.class);
                             Bundle HistoryGradeSchool_bundle = new Bundle();
+                            HistoryGradeSchool_bundle.putInt("score",c);
+                            HistoryGradeSchool_check.putExtras(HistoryGradeSchool_bundle);
                             HistoryGradeSchool_bundle.putInt("result", HistoryGradeSchool);
                             HistoryGradeSchool_check.putExtras(HistoryGradeSchool_bundle);
                             quiz_results.this.finish();
@@ -133,6 +168,8 @@ public class quiz_results extends AppCompatActivity {
                         case 301:
                             Intent HistoryHighSchool_check = new Intent(quiz_results.this, activity_results.class);
                             Bundle HistoryHighSchool_bundle = new Bundle();
+                            HistoryHighSchool_bundle.putInt("score",c);
+                            HistoryHighSchool_check.putExtras(HistoryHighSchool_bundle);
                             HistoryHighSchool_bundle.putInt("result", HistoryHighSchool);
                             HistoryHighSchool_check.putExtras(HistoryHighSchool_bundle);
                             quiz_results.this.finish();
@@ -141,6 +178,8 @@ public class quiz_results extends AppCompatActivity {
                         case 302:
                             Intent HistoryCollege_check = new Intent(quiz_results.this, activity_results.class);
                             Bundle HistoryCollege_bundle = new Bundle();
+                            HistoryCollege_bundle.putInt("score",c);
+                            HistoryCollege_check.putExtras(HistoryCollege_bundle);
                             HistoryCollege_bundle.putInt("result", HistoryCollege);
                             HistoryCollege_check.putExtras(HistoryCollege_bundle);
                             quiz_results.this.finish();

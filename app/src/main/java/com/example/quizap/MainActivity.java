@@ -1,15 +1,27 @@
 package com.example.quizap;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.database.Cursor;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    TextView totalScore;
+    MyDatabaseHelper myDB;
+
+    ArrayList<String> user_id;
+    ArrayList<String> user_name;
+    ArrayList<String> user_score;
+    RecyclerView recyclerView;
+    CustomAdpater2 CustomAdpater2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +34,8 @@ public class MainActivity extends AppCompatActivity {
                         | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
 
         caseButtons();
+
+        data_read();
     }
 
     public void caseButtons(){
@@ -40,19 +54,31 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onClick(View view) {
 
+            TextView score_a = (TextView) findViewById(R.id.user_score_txt);
+
+            int score = Integer.valueOf(score_a.getText().toString());
 
             switch (view.getId()){
                 case R.id.litButton:
-                    Intent lit = new Intent(MainActivity.this, activity_literature.class);
-                    startActivity(lit);
+                    Intent intent_lit = new Intent(MainActivity.this, activity_literature.class);
+                    Bundle bundle_lit = new Bundle();
+                    bundle_lit.putInt("score", score);
+                    intent_lit.putExtras(bundle_lit);
+                    startActivity(intent_lit);
                     break;
                 case R.id.historyButton:
-                    Intent his = new Intent(MainActivity.this, activity_worldhistory.class);
-                    startActivity(his);
+                    Intent intent_his = new Intent(MainActivity.this, activity_worldhistory.class);
+                    Bundle bundle_his = new Bundle();
+                    bundle_his.putInt("score", score);
+                    intent_his.putExtras(bundle_his);
+                    startActivity(intent_his);
                     break;
                 case R.id.mathButton:
-                    Intent math = new Intent(MainActivity.this, activity_math.class);
-                    startActivity(math);
+                    Intent intent_math = new Intent(MainActivity.this, activity_math.class);
+                    Bundle bundle_math = new Bundle();
+                    bundle_math.putInt("score", score);
+                    intent_math.putExtras(bundle_math);
+                    startActivity(intent_math);
                     break;
                 case R.id.geographyButton:
                     Intent geo = new Intent(MainActivity.this, activity_geography.class);
@@ -81,5 +107,34 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     };
+
+    void data_read(){
+        recyclerView = findViewById(R.id.recyclerView);
+
+        myDB = new MyDatabaseHelper(MainActivity.this);
+        user_id = new ArrayList<>();
+        user_name = new ArrayList<>();
+        user_score = new ArrayList<>();
+
+        storeDataInArrays();
+
+        CustomAdpater2 = new CustomAdpater2(MainActivity.this, user_id, user_name, user_score);
+        recyclerView.setAdapter(CustomAdpater2);
+        recyclerView.setLayoutManager(new LinearLayoutManager(MainActivity.this));
+
+    }
+
+    void storeDataInArrays(){
+        Cursor cursor = myDB.readFirst();
+        if(cursor.getCount() == 0){
+            Toast.makeText(this, "no data", Toast.LENGTH_SHORT).show();
+        }else{
+            while (cursor.moveToNext()){
+                user_id.add(cursor.getString(0));
+                user_name.add(cursor.getString(1));
+                user_score.add(cursor.getString(2));
+            }
+        }
+    }
 
 }

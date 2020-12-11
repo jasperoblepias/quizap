@@ -21,6 +21,9 @@ public class activity_results extends AppCompatActivity {
     private questionsHistoryHighSchool questionsHistoryHighSchool = new questionsHistoryHighSchool();
     private questionsHistoryCollege questionsHistoryCollege = new questionsHistoryCollege();
 
+
+    private int score;
+
     private TextView question_1;
     private TextView question_2;
     private TextView question_3;
@@ -68,6 +71,7 @@ public class activity_results extends AppCompatActivity {
     private void Level_code_Switch(){
         Bundle bundle = getIntent().getExtras();
         int level_code = bundle.getInt("result");
+        score = bundle.getInt("score");
 
         switch (level_code){
             //literature subject
@@ -131,6 +135,18 @@ public class activity_results extends AppCompatActivity {
     private View.OnClickListener buttonClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
+
+            String id, user_score;
+            MyDatabaseHelper myDB = new MyDatabaseHelper(activity_results.this);
+
+            Bundle bundle = getIntent().getExtras();
+            int c = bundle.getInt("score");
+
+            user_score = Integer.toString(c);
+            id = "1";
+            myDB.updateData(id, user_score);
+
+
             Intent intent = new Intent(activity_results.this, MainActivity.class);
             activity_results.this.finish();
             startActivity(intent);

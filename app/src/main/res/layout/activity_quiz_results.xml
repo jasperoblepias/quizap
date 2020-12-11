@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".quiz_results"
-    android:background="@drawable/resultbg">
+    android:background="@drawable/resultbg"
+    android:layout_gravity="center">
 
     <ImageView
         android:id="@+id/imageView6"
@@ -13,7 +14,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="140dp"
         android:layout_marginTop="128dp"
+        android:layout_marginEnd="140dp"
         android:contentDescription="@string/todo"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/trophy" />
@@ -24,10 +27,12 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="128dp"
         android:layout_marginTop="272dp"
+        android:layout_marginEnd="131dp"
         android:fontFamily="@font/sansserif_demibold"
         android:text="@string/congrats"
         android:textColor="#514B4F"
         android:textSize="37sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -37,10 +42,12 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="136dp"
         android:layout_marginTop="32dp"
+        android:layout_marginEnd="136dp"
         android:fontFamily="@font/sansserif_demibold"
         android:text="@string/_100_score"
         android:textColor="#514B4F"
         android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
@@ -50,9 +57,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="88dp"
         android:layout_marginTop="28dp"
+        android:layout_marginEnd="91dp"
         android:text="@string/resultSucess"
         android:textColor="#514B4F"
         android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/scoreResult" />
 
@@ -62,9 +71,12 @@
         android:layout_height="49dp"
         android:layout_marginStart="80dp"
         android:layout_marginTop="28dp"
+        android:layout_marginEnd="87dp"
         android:text="@string/text1234"
         android:textColor="#514B4F"
         android:textSize="18sp"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView18" />
 
@@ -90,6 +102,17 @@
         android:fontFamily="@font/sansserif_demibold"
         android:text="@string/check_nanswers"
         app:layout_constraintStart_toEndOf="@+id/continueBtn"
+        app:layout_constraintTop_toBottomOf="@+id/textResult" />
+
+    <TextView
+        android:id="@+id/finalscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="179dp"
+        android:layout_marginTop="11dp"
+        android:text="TextView"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textResult" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -30,6 +30,9 @@ public class activity_literature extends AppCompatActivity {
         @Override
         public void onClick(View v) {
 
+            Bundle score_code = getIntent().getExtras();
+            int score = score_code.getInt("score");
+
             int gradeschool = 100;
             int highschool = 101;
             int college = 102;
@@ -38,6 +41,7 @@ public class activity_literature extends AppCompatActivity {
                     Intent intent = new Intent(activity_literature.this, activity_quiz_main.class);
                     Bundle bundle = new Bundle();
                     bundle.putInt("number", gradeschool);
+                    bundle.putInt("score", score);
                     intent.putExtras(bundle);
                     activity_literature.this.finish();
                     startActivity(intent);
@@ -46,6 +50,7 @@ public class activity_literature extends AppCompatActivity {
                     Intent intent1 = new Intent(activity_literature.this, activity_quiz_main.class);
                     Bundle bundle1 = new Bundle();
                     bundle1.putInt("number", highschool);
+                    bundle1.putInt("score", score);
                     intent1.putExtras(bundle1);
                     activity_literature.this.finish();
                     startActivity(intent1);
@@ -54,6 +59,7 @@ public class activity_literature extends AppCompatActivity {
                     Intent intent2 = new Intent(activity_literature.this, activity_quiz_main.class);
                     Bundle bundle2 = new Bundle();
                     bundle2.putInt("number", college);
+                    bundle2.putInt("score", score);
                     intent2.putExtras(bundle2);
                     activity_literature.this.finish();
                     startActivity(intent2);

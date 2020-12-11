@@ -10,13 +10,13 @@
 
     <ScrollView
         android:id="@+id/scrollView3"
-        android:layout_width="405dp"
-        android:layout_height="454dp"
+        android:layout_width="397dp"
+        android:layout_height="505dp"
         android:layout_marginTop="150dp"
+        android:overScrollMode="never"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:overScrollMode="never">
+        app:layout_constraintTop_toTopOf="parent">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -25,7 +25,7 @@
 
             <TextView
                 android:id="@+id/question_text_1"
-                android:layout_width="match_parent"
+                android:layout_width="381dp"
                 android:layout_height="57dp"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="0dp"
@@ -353,7 +353,6 @@
                 android:fontFamily="@font/sansserif_demibold"
                 android:text="Answer"
                 android:textSize="18dp" />
-
 
 
         </RelativeLayout>

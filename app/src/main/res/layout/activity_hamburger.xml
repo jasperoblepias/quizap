@@ -12,9 +12,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="128dp"
-        android:layout_marginTop="92dp"
+        android:layout_marginTop="48dp"
         android:fontFamily="@font/sansserif_demibold"
-        android:text="@string/guest"
+        android:text="Jasper"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,18 +22,20 @@
 
     <Button
         android:id="@+id/acoount_btn"
-        android:layout_width="130dp"
+        android:layout_width="119dp"
         android:layout_height="32dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="97dp"
-        android:layout_marginTop="140dp"
+
+        android:layout_marginTop="116dp"
+
         android:background="@null"
         android:fontFamily="@font/san_serif"
         android:text="@string/account"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
-        android:textSize="30sp"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -43,33 +45,19 @@
         android:layout_height="32dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="72dp"
-        android:layout_marginTop="15dp"
+
+        android:layout_marginTop="12dp"
+
         android:background="@null"
         android:fontFamily="@font/san_serif"
         android:text="@string/leaderboard"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
-        android:textSize="30sp"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.46"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/acoount_btn" />
-
-    <Button
-        android:id="@+id/settings"
-        android:layout_width="120dp"
-        android:layout_height="40dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="104dp"
-        android:layout_marginTop="15dp"
-        android:background="@null"
-        android:fontFamily="@font/san_serif"
-        android:text="@string/settings"
-        android:textAllCaps="false"
-        android:textColor="#FFFFFF"
-        android:textSize="30sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/leaderboard_btn" />
+        app:layout_constraintTop_toBottomOf="@+id/create_account_btn" />
 
     <Button
         android:id="@+id/help_btn"
@@ -77,44 +65,38 @@
         android:layout_height="40dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="120dp"
-        android:layout_marginTop="12dp"
+
+        android:layout_marginTop="8dp"
+
         android:background="@null"
         android:fontFamily="@font/san_serif"
         android:text="@string/help_2"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
-        android:textSize="30sp"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/settings" />
+        app:layout_constraintTop_toBottomOf="@+id/leaderboard_btn" />
 
     <Button
-        android:id="@+id/about_btn"
-        android:layout_width="90dp"
+        android:id="@+id/create_account_btn"
+        android:layout_width="247dp"
         android:layout_height="32dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="120dp"
-        android:layout_marginTop="12dp"
+
+        android:layout_marginTop="16dp"
+
         android:background="@null"
         android:fontFamily="@font/san_serif"
-        android:text="@string/about"
+        android:text="Create Account"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
-        android:textSize="30sp"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.432"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/help_btn" />
+        app:layout_constraintTop_toBottomOf="@+id/acoount_btn" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="66dp"
-        android:layout_height="64dp"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="129dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="15dp"
-        android:background="@drawable/profilepic"
-        android:contentDescription="@string/todo"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
