@@ -19,6 +19,7 @@ public class account extends AppCompatActivity {
 
     RecyclerView recyclerView;
     Button  ok_btn;
+    Button testing;
 
 
     MyDatabaseHelper myDB;
